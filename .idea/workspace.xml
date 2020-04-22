@@ -2,20 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d972b536-7430-498d-8fe8-b910bf66b687" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/airport-control.iml" beforeDir="false" afterPath="$PROJECT_DIR$/airport-control.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nullxdeadbeef/KontrolTårn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nullxdeadbeef/KontrolTårn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nullxdeadbeef/Lufthavnspersonale/Lufthavnspersonale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nullxdeadbeef/Lufthavnspersonale/Lufthavnspersonale.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="ComposerSettings">
-    <execution>
-      <executable />
-    </execution>
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -62,6 +57,11 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+    <option name="y" value="23" />
+    <option name="width" value="1680" />
+    <option name="height" value="1027" />
+  </component>
   <component name="ProjectId" id="1at1RuGPKmYIYySEyO0gVQr0j43" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -82,27 +82,27 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Dropbox/Skole/IdeaProjects/3. Semster/#ChatServer Projekter#/ChatServerClients" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.nullxdeadbeef" />
       <recent name="com.nullxdeadbeef.Service" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.KontrolTårnTest.inkrementerTidspunkt">
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.nullxdeadbeef.Main" />
       <module name="airport-control" />
@@ -113,18 +113,44 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
+    <configuration name="KontrolTårnTest.inkrementerTidspunkt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="airport-control" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nullxdeadbeef.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.nullxdeadbeef" />
+      <option name="MAIN_CLASS_NAME" value="com.nullxdeadbeef.KontrolTårnTest" />
+      <option name="METHOD_NAME" value="inkrementerTidspunkt" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KontrolTårnTest.startSimulering" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="airport-control" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nullxdeadbeef.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.nullxdeadbeef" />
+      <option name="MAIN_CLASS_NAME" value="com.nullxdeadbeef.KontrolTårnTest" />
+      <option name="METHOD_NAME" value="startSimulering" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
       <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
+        <item itemvalue="JUnit.KontrolTårnTest.inkrementerTidspunkt" />
+        <item itemvalue="JUnit.KontrolTårnTest.startSimulering" />
       </list>
-    </option>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -139,40 +165,109 @@
       <workItem from="1587540073578" duration="725000" />
       <workItem from="1587541144538" duration="3259000" />
     </task>
+    <task id="LOCAL-00001" summary="fly og flyrejse">
+      <created>1587548954547</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1587548954547</updated>
+    </task>
+    <task id="LOCAL-00002" summary="tårn">
+      <created>1587554412880</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1587554412880</updated>
+    </task>
+    <task id="LOCAL-00003" summary="tårn">
+      <created>1587554562862</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1587554562862</updated>
+    </task>
+    <task id="LOCAL-00004" summary="rettelser og begyndt paa testing">
+      <created>1587558452138</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1587558452138</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="commit to pull" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit to pull" />
+    <MESSAGE value="pøls" />
+    <MESSAGE value="fly og flyrejse" />
+    <MESSAGE value="tårn" />
+    <MESSAGE value="rettelser og begyndt paa testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="rettelser og begyndt paa testing" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="796" y="224" key="#com.intellij.ide.util.MemberChooser" timestamp="1587540777431">
-      <screen x="62" y="0" width="1858" height="1080" />
+    <state x="877" y="350" key="#KontrolTårnTest.startSimulering" timestamp="1587558245631">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
+    <state x="877" y="350" key="#KontrolTårnTest.startSimulering/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587558245631" />
+    <state x="872" y="358" key="#Notifications" timestamp="1587549010769">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="872" y="358" key="#Notifications/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587549010769" />
+    <state x="1011" y="290" key="#com.intellij.ide.util.MemberChooser" timestamp="1587555358551">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1011" y="290" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587555358551" />
     <state x="796" y="224" key="#com.intellij.ide.util.MemberChooser/62.0.1858.1080@62.0.1858.1080" timestamp="1587540777431" />
-    <state x="808" y="408" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1587547180772">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="1128" y="589" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1587559148021">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="808" y="408" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587547180772" />
-    <state x="-1075" y="298" key="FileChooserDialogImpl" timestamp="1587555973149">
-      <screen x="-1920" y="0" width="1920" height="1040" />
+    <state x="1128" y="589" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587559148021" />
+    <state x="887" y="294" key="CommitChangelistDialog2" timestamp="1587558450940">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="-1075" y="298" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1587555973149" />
-    <state x="349" y="85" width="998" height="708" key="SettingsEditor" timestamp="1587549041726">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="887" y="294" key="CommitChangelistDialog2/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587558450940" />
+    <state x="960" y="453" key="FileChooserDialogImpl" timestamp="1587548729553">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="349" y="85" width="998" height="708" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587549041726" />
-    <state x="664" y="413" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1587555008660">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="960" y="453" key="FileChooserDialogImpl/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587548729553" />
+    <state width="2517" height="273" key="GridCell.Tab.0.bottom" timestamp="1587558417347">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="664" y="413" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587555008660" />
-    <state x="662" y="311" key="git4idea.merge.GitPullDialog" timestamp="1587560836559">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="2517" height="273" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587558417347" />
+    <state width="2517" height="273" key="GridCell.Tab.0.center" timestamp="1587558417347">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="662" y="311" key="git4idea.merge.GitPullDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587560836559" />
+    <state width="2517" height="273" key="GridCell.Tab.0.center/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587558417347" />
+    <state width="2517" height="273" key="GridCell.Tab.0.left" timestamp="1587558417346">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="273" key="GridCell.Tab.0.left/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587558417346" />
+    <state width="2517" height="273" key="GridCell.Tab.0.right" timestamp="1587558417347">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="273" key="GridCell.Tab.0.right/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587558417347" />
+    <state x="721" y="266" width="1381" height="851" key="SettingsEditor" timestamp="1587549268512">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="721" y="266" width="1381" height="851" key="SettingsEditor/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587549268512" />
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1587558467413">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587558467413" />
+    <state x="984" y="593" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1587548290516">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="984" y="593" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587548290516" />
+    <state x="1051" y="418" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1587555536683">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1051" y="418" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587555536683" />
+    <state x="982" y="491" key="git4idea.merge.GitPullDialog" timestamp="1587558456919">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="982" y="491" key="git4idea.merge.GitPullDialog/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587558456919" />
     <state width="600" height="424" key="javadoc.popup" timestamp="1587540589642">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>

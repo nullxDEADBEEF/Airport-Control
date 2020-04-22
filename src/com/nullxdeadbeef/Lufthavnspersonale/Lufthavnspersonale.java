@@ -1,8 +1,8 @@
-package com.nullxdeadbeef;
+package com.nullxdeadbeef.Lufthavnspersonale;
 
 import java.net.Socket;
 
-public class Lufthavnspersonale {
+public class Lufthavnspersonale extends Thread{
     private int gruppeNr;
     private Socket walkie;
 
