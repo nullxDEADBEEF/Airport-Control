@@ -24,6 +24,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
   </component>
@@ -61,14 +62,18 @@
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="796" y="224" key="#com.intellij.ide.util.MemberChooser/62.0.1858.1080@62.0.1858.1080" timestamp="1587540777431" />
+    <state x="616" y="135" key="CommitChangelistDialog2" timestamp="1587546198812">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="616" y="135" key="CommitChangelistDialog2/62.0.1858.1080@62.0.1858.1080" timestamp="1587546198812" />
     <state x="687" y="364" key="com.intellij.ide.util.TipDialog" timestamp="1587546111545">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="687" y="364" key="com.intellij.ide.util.TipDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1587546111545" />
-    <state x="692" y="331" key="git4idea.merge.GitPullDialog" timestamp="1587546122263">
+    <state x="692" y="331" key="git4idea.merge.GitPullDialog" timestamp="1587546205807">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state x="692" y="331" key="git4idea.merge.GitPullDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1587546122263" />
+    <state x="692" y="331" key="git4idea.merge.GitPullDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1587546205807" />
     <state width="600" height="424" key="javadoc.popup" timestamp="1587540589642">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
