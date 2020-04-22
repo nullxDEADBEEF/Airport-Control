@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d972b536-7430-498d-8fe8-b910bf66b687" name="Default Changelist" comment="trying to stash .idea files">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_191.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="d972b536-7430-498d-8fe8-b910bf66b687" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/airport-control.iml" beforeDir="false" afterPath="$PROJECT_DIR$/airport-control.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nullxdeadbeef/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nullxdeadbeef/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nullxdeadbeef/Service/DatabaseAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nullxdeadbeef/Service/DatabaseAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nullxdeadbeef/Service/FlyDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nullxdeadbeef/Service/FlyDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nullxdeadbeef/Standplads.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nullxdeadbeef/Standplads.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nullxdeadbeef/KontrolTårn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nullxdeadbeef/KontrolTårn.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,15 +55,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IgnoredFileRootStore">
-    <option name="generatedRoots">
-      <set>
-        <option value="C:\Users\andxd\Desktop\airport-control\.idea" />
-      </set>
-    </option>
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+    <option name="y" value="23" />
+    <option name="width" value="1680" />
+    <option name="height" value="1027" />
   </component>
   <component name="ProjectId" id="1at1RuGPKmYIYySEyO0gVQr0j43" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+  <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -89,7 +80,6 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Dropbox/agil udviklingsuge/mysql-connector-java-8.0.19.jar!/" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -97,9 +87,9 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -133,67 +123,67 @@
       <updated>1587540070708</updated>
       <workItem from="1587540073578" duration="725000" />
       <workItem from="1587541144538" duration="3259000" />
-      <workItem from="1587547555953" duration="4532000" />
     </task>
+    <task id="LOCAL-00001" summary="fly og flyrejse">
+      <created>1587548954547</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1587548954547</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="trying to stash workspace.xml" />
-    <MESSAGE value="trying to stash .idea files" />
-    <option name="LAST_COMMIT_MESSAGE" value="trying to stash .idea files" />
+    <MESSAGE value="pøls" />
+    <MESSAGE value="fly og flyrejse" />
+    <option name="LAST_COMMIT_MESSAGE" value="fly og flyrejse" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="796" y="224" key="#com.intellij.ide.util.MemberChooser" timestamp="1587540777431">
-      <screen x="62" y="0" width="1858" height="1080" />
+    <state x="872" y="358" key="#Notifications" timestamp="1587549010769">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
+    <state x="872" y="358" key="#Notifications/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587549010769" />
+    <state x="1011" y="290" key="#com.intellij.ide.util.MemberChooser" timestamp="1587554387003">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1011" y="290" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587554387003" />
     <state x="796" y="224" key="#com.intellij.ide.util.MemberChooser/62.0.1858.1080@62.0.1858.1080" timestamp="1587540777431" />
-    <state x="839" y="429" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1587546309319">
-      <screen x="62" y="0" width="1858" height="1080" />
+    <state x="1128" y="589" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1587548279320">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="839" y="429" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1587546309319" />
-    <state x="616" y="135" key="CommitChangelistDialog2" timestamp="1587555061498">
-      <screen x="62" y="0" width="1858" height="1080" />
+    <state x="1128" y="589" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587548279320" />
+    <state x="887" y="294" key="CommitChangelistDialog2" timestamp="1587554412195">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="616" y="135" key="CommitChangelistDialog2/62.0.1858.1080@62.0.1858.1080" timestamp="1587555061498" />
-    <state x="697" y="281" key="FileChooserDialogImpl" timestamp="1587553369851">
-      <screen x="62" y="0" width="1858" height="1080" />
+    <state x="887" y="294" key="CommitChangelistDialog2/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587554412195" />
+    <state x="960" y="453" key="FileChooserDialogImpl" timestamp="1587548729553">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="697" y="281" key="FileChooserDialogImpl/62.0.1858.1080@62.0.1858.1080" timestamp="1587553369851" />
-    <state width="1815" height="294" key="GridCell.Tab.0.bottom" timestamp="1587553382012">
-      <screen x="62" y="0" width="1858" height="1080" />
+    <state x="960" y="453" key="FileChooserDialogImpl/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587548729553" />
+    <state x="721" y="266" width="1381" height="851" key="SettingsEditor" timestamp="1587549268512">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1815" height="294" key="GridCell.Tab.0.bottom/62.0.1858.1080@62.0.1858.1080" timestamp="1587553382012" />
-    <state width="1815" height="294" key="GridCell.Tab.0.center" timestamp="1587553382012">
-      <screen x="62" y="0" width="1858" height="1080" />
+    <state x="721" y="266" width="1381" height="851" key="SettingsEditor/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587549268512" />
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1587554447821">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1815" height="294" key="GridCell.Tab.0.center/62.0.1858.1080@62.0.1858.1080" timestamp="1587553382012" />
-    <state width="1815" height="294" key="GridCell.Tab.0.left" timestamp="1587553382012">
-      <screen x="62" y="0" width="1858" height="1080" />
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587554447821" />
+    <state x="984" y="593" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1587548290516">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1815" height="294" key="GridCell.Tab.0.left/62.0.1858.1080@62.0.1858.1080" timestamp="1587553382012" />
-    <state width="1815" height="294" key="GridCell.Tab.0.right" timestamp="1587553382012">
-      <screen x="62" y="0" width="1858" height="1080" />
+    <state x="984" y="593" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587548290516" />
+    <state x="1051" y="418" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1587554107428">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1815" height="294" key="GridCell.Tab.0.right/62.0.1858.1080@62.0.1858.1080" timestamp="1587553382012" />
-    <state x="471" y="114" key="SettingsEditor" timestamp="1587553373869">
-      <screen x="62" y="0" width="1858" height="1080" />
+    <state x="1051" y="418" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587554107428" />
+    <state x="982" y="491" key="git4idea.merge.GitPullDialog" timestamp="1587554441737">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="471" y="114" key="SettingsEditor/62.0.1858.1080@62.0.1858.1080" timestamp="1587553373869" />
-    <state x="687" y="364" key="com.intellij.ide.util.TipDialog" timestamp="1587547559983">
-      <screen x="62" y="0" width="1858" height="1080" />
-    </state>
-    <state x="687" y="364" key="com.intellij.ide.util.TipDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1587547559983" />
-    <state x="695" y="433" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1587546397934">
-      <screen x="62" y="0" width="1858" height="1080" />
-    </state>
-    <state x="695" y="433" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/62.0.1858.1080@62.0.1858.1080" timestamp="1587546397934" />
-    <state x="692" y="331" key="git4idea.merge.GitPullDialog" timestamp="1587555068788">
-      <screen x="62" y="0" width="1858" height="1080" />
-    </state>
-    <state x="692" y="331" key="git4idea.merge.GitPullDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1587555068788" />
+    <state x="982" y="491" key="git4idea.merge.GitPullDialog/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587554441737" />
     <state width="600" height="424" key="javadoc.popup" timestamp="1587540589642">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
