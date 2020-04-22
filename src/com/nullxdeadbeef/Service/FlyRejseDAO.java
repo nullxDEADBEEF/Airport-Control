@@ -18,9 +18,9 @@ public class FlyRejseDAO {
              PreparedStatement ps = con.prepareStatement(sql)) {
 
             ps.setString(1, flyRejse.getDato().toString());
-            ps.setBoolean(2, flyRejse.getArrival());
+            ps.setBoolean(2, flyRejse.getAnkomst());
             ps.setString(3, flyRejse.getRuteNr());
-            ps.setTime(4, flyRejse.getScheduledTime());
+            ps.setTime(4, flyRejse.getKlokkeslæt());
             ps.setString(5,flyRejse.getOrigin_destination());
 
         } catch (Exception e) {
@@ -40,9 +40,9 @@ public class FlyRejseDAO {
             while (rs.next()) {
                 FlyRejse flyRejse = new FlyRejse();
                 flyRejse.setDato(rs.getDate("date"));
-                flyRejse.setArrival(rs.getBoolean("arrival"));
+                flyRejse.setAnkomst(rs.getBoolean("arrival"));
                 flyRejse.setRuteNr(rs.getString("route_nr"));
-                flyRejse.setScheduledTime(rs.getTime("STA/STD"));
+                flyRejse.setKlokkeslæt(rs.getTime("STA/STD"));
                 flyRejse.setOrigin_destination(rs.getString("origin/destination"));
                 flyRejser.add(flyRejse);
             }
