@@ -10,11 +10,21 @@ public class Fly {
     private boolean baggage;
     private boolean brændstof;
 
-    public void passagererAf() {}
-    public void baggageAf() {}
-    public void brændstofPå() {}
-    public void baggagePå() {}
-    public void passagererPå() {}
+    public void passagererAf() {
+        setPassagerer(false);
+    }
+    public void baggageAf() {
+        setBaggage(false);
+    }
+    public void brændstofPå() {
+        setBrændstof(true);
+    }
+    public void baggagePå() {
+        setBaggage(true);
+    }
+    public void passagererPå() {
+        setPassagerer(true);
+    }
 
     public String getaC() {
         return aC;
