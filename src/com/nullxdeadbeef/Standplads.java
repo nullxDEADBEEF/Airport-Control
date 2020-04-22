@@ -2,10 +2,6 @@ package com.nullxdeadbeef;
 
 
 public class Standplads {
-    public enum Type {
-        SMALL, MEDIUM, BIG
-    }
-
     private int standpladsNr;
     private Type type;
     private Boolean ledig;
