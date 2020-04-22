@@ -4,6 +4,8 @@ import com.nullxdeadbeef.FlyRejse;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.ArrayList;
 
 public class FlyRejseDAO {
 
@@ -25,5 +27,29 @@ public class FlyRejseDAO {
             System.out.println("Error" + e);
             e.printStackTrace();
         }
+    }
+
+    public ArrayList<FlyRejse> selectAll() {
+        ArrayList<FlyRejse> flyRejser = new ArrayList<>();
+        String sql = "SELECT * FROM flights";
+
+        try (Connection con = DatabaseAdapter.getConnection();
+             PreparedStatement ps = con.prepareStatement(sql);
+             ResultSet rs = ps.executeQuery()) {
+
+            while (rs.next()) {
+                FlyRejse flyRejse = new FlyRejse();
+                flyRejse.setDato(rs.getDate("date"));
+                flyRejse.setArrival(rs.getBoolean("arrival"));
+                flyRejse.setRuteNr(rs.getString("route_nr"));
+                flyRejse.setScheduledTime(rs.getTime("STA/STD"));
+                flyRejse.setOrigin_destination(rs.getString("origin/destination"));
+                flyRejser.add(flyRejse);
+            }
+        } catch (Exception e) {
+            System.out.println("Error: " + e);
+            e.printStackTrace();
+        } return flyRejser;
+
     }
 }
