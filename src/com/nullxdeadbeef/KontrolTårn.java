@@ -16,7 +16,6 @@ public class KontrolTårn extends Thread{
     private LocalDateTime tidspunkt;
     private Socket server;
 
-
 //    public void run(){
 //        while (true){
 ////            Lyt til socket
