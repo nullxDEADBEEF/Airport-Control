@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d972b536-7430-498d-8fe8-b910bf66b687" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_19.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_19.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_191.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nullxdeadbeef/Standplads.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nullxdeadbeef/Standplads.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/airport-control.iml" beforeDir="false" afterPath="$PROJECT_DIR$/airport-control.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,11 +58,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="y" value="23" />
-    <option name="width" value="1680" />
-    <option name="height" value="1027" />
-  </component>
   <component name="ProjectId" id="1at1RuGPKmYIYySEyO0gVQr0j43" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -80,6 +78,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Dropbox/agil udviklingsuge/mysql-connector-java-8.0.19.jar!/" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -87,8 +86,8 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
@@ -131,7 +130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587548954547</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fly og flyrejse">
+      <created>1587558158437</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1587558158437</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,19 +162,41 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1128" y="589" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587548279320" />
-    <state x="887" y="294" key="CommitChangelistDialog2" timestamp="1587554412195">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state x="706" y="227" key="CommitChangelistDialog2" timestamp="1587558157775">
+      <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="887" y="294" key="CommitChangelistDialog2/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587554412195" />
-    <state x="960" y="453" key="FileChooserDialogImpl" timestamp="1587548729553">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state x="706" y="227" key="CommitChangelistDialog2/62.0.1858.1080@62.0.1858.1080" timestamp="1587558157775" />
+    <state x="759" y="349" key="FileChooserDialogImpl" timestamp="1587558299006">
+      <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="960" y="453" key="FileChooserDialogImpl/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587548729553" />
-    <state x="585" y="205" width="1003" height="708" key="SettingsEditor" timestamp="1587555212865">
+    <state x="759" y="349" key="FileChooserDialogImpl/62.0.1858.1080@62.0.1858.1080" timestamp="1587558299006" />
+    <state width="1815" height="294" key="GridCell.Tab.0.bottom" timestamp="1587559453880">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1815" height="294" key="GridCell.Tab.0.bottom/62.0.1858.1080@62.0.1858.1080" timestamp="1587559453880" />
+    <state width="1815" height="294" key="GridCell.Tab.0.center" timestamp="1587559453880">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1815" height="294" key="GridCell.Tab.0.center/62.0.1858.1080@62.0.1858.1080" timestamp="1587559453880" />
+    <state width="1815" height="294" key="GridCell.Tab.0.left" timestamp="1587559453880">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1815" height="294" key="GridCell.Tab.0.left/62.0.1858.1080@62.0.1858.1080" timestamp="1587559453880" />
+    <state width="1815" height="294" key="GridCell.Tab.0.right" timestamp="1587559453880">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1815" height="294" key="GridCell.Tab.0.right/62.0.1858.1080@62.0.1858.1080" timestamp="1587559453880" />
+    <state x="703" y="256" key="MultipleFileMergeDialog" timestamp="1587558173746">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="703" y="256" key="MultipleFileMergeDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1587558173746" />
+    <state x="585" y="205" width="1003" height="708" key="SettingsEditor" timestamp="1587558304936">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="721" y="266" width="1381" height="851" key="SettingsEditor/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587549268512" />
-    <state x="585" y="205" width="1003" height="708" key="SettingsEditor/62.0.1858.1080@62.0.1858.1080" timestamp="1587555212865" />
+    <state x="585" y="205" width="1003" height="708" key="SettingsEditor/62.0.1858.1080@62.0.1858.1080" timestamp="1587558304936" />
     <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1587554447821">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -181,11 +209,11 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1051" y="418" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587554107428" />
-    <state x="775" y="379" key="git4idea.merge.GitPullDialog" timestamp="1587558111658">
+    <state x="775" y="379" key="git4idea.merge.GitPullDialog" timestamp="1587559816265">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="982" y="491" key="git4idea.merge.GitPullDialog/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587554441737" />
-    <state x="775" y="379" key="git4idea.merge.GitPullDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1587558111658" />
+    <state x="775" y="379" key="git4idea.merge.GitPullDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1587559816265" />
     <state width="600" height="424" key="javadoc.popup" timestamp="1587540589642">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
