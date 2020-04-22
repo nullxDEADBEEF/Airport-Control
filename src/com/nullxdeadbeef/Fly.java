@@ -5,6 +5,7 @@ public class Fly {
     private FlyRejse flyRejse;
     private TaxiRute taxiRute;
     private Status status;
+    private String ac;
 
     public void passagererAf() {}
     public void baggageAf() {}
@@ -43,4 +44,8 @@ public class Fly {
     public void setStatus( Status status ) {
         this.status = status;
     }
+
+    public String getAc() { return ac; }
+
+    public void setAc(String ac) { this.ac = ac; }
 }
