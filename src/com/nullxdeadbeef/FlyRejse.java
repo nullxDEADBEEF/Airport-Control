@@ -6,11 +6,10 @@ import java.util.Date;
 public class FlyRejse {
 
     private Date dato;
-    private Boolean arrival;
+    private Boolean ankomst;
     private String ruteNr;
-    private Time scheduledTime;
+    private Time klokkeslæt;
     private String origin_destination;
-    private Fly fly;
 
     public Date getDato() {
         return dato;
@@ -20,12 +19,12 @@ public class FlyRejse {
         this.dato = dato;
     }
 
-    public Boolean getArrival() {
-        return arrival;
+    public Boolean getAnkomst() {
+        return ankomst;
     }
 
-    public void setArrival(Boolean arrival) {
-        this.arrival = arrival;
+    public void setAnkomst(Boolean ankomst) {
+        this.ankomst = ankomst;
     }
 
     public String getRuteNr() {
@@ -36,12 +35,12 @@ public class FlyRejse {
         this.ruteNr = ruteNr;
     }
 
-    public Time getScheduledTime() {
-        return scheduledTime;
+    public Time getKlokkeslæt() {
+        return klokkeslæt;
     }
 
-    public void setScheduledTime(Time scheduledTime) {
-        this.scheduledTime = scheduledTime;
+    public void setKlokkeslæt(Time klokkeslæt) {
+        this.klokkeslæt = klokkeslæt;
     }
 
     public String getOrigin_destination() {
@@ -50,13 +49,5 @@ public class FlyRejse {
 
     public void setOrigin_destination(String origin_destination) {
         this.origin_destination = origin_destination;
-    }
-
-    public Fly getFly() {
-        return fly;
-    }
-
-    public void setFly(Fly fly) {
-        this.fly = fly;
     }
 }

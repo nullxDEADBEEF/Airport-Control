@@ -1,11 +1,14 @@
 package com.nullxdeadbeef;
 
 public class Fly {
+    private String aC;
     private Standplads standplads;
     private FlyRejse flyRejse;
     private TaxiRute taxiRute;
     private Status status;
-    private String ac;
+    private boolean passagerer;
+    private boolean baggage;
+    private boolean brændstof;
 
     public void passagererAf() {}
     public void baggageAf() {}
@@ -13,11 +16,19 @@ public class Fly {
     public void baggagePå() {}
     public void passagererPå() {}
 
+    public String getaC() {
+        return aC;
+    }
+
+    public void setaC(String aC) {
+        this.aC = aC;
+    }
+
     public Standplads getStandplads() {
         return standplads;
     }
 
-    public void setStandplads( Standplads standplads ) {
+    public void setStandplads(Standplads standplads) {
         this.standplads = standplads;
     }
 
@@ -25,7 +36,7 @@ public class Fly {
         return flyRejse;
     }
 
-    public void setFlyRejse( FlyRejse flyRejse ) {
+    public void setFlyRejse(FlyRejse flyRejse) {
         this.flyRejse = flyRejse;
     }
 
@@ -33,7 +44,7 @@ public class Fly {
         return taxiRute;
     }
 
-    public void setTaxiRute( TaxiRute taxiRute ) {
+    public void setTaxiRute(TaxiRute taxiRute) {
         this.taxiRute = taxiRute;
     }
 
@@ -41,11 +52,31 @@ public class Fly {
         return status;
     }
 
-    public void setStatus( Status status ) {
+    public void setStatus(Status status) {
         this.status = status;
     }
 
-    public String getAc() { return ac; }
+    public boolean isPassagerer() {
+        return passagerer;
+    }
 
-    public void setAc(String ac) { this.ac = ac; }
+    public void setPassagerer(boolean passagerer) {
+        this.passagerer = passagerer;
+    }
+
+    public boolean isBaggage() {
+        return baggage;
+    }
+
+    public void setBaggage(boolean baggage) {
+        this.baggage = baggage;
+    }
+
+    public boolean isBrændstof() {
+        return brændstof;
+    }
+
+    public void setBrændstof(boolean brændstof) {
+        this.brændstof = brændstof;
+    }
 }

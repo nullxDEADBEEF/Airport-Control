@@ -24,6 +24,5 @@ public class DatabaseAdapter {
             System.out.println("Connection failed.");
             e.printStackTrace();
         } return con;
-
     }
 }
