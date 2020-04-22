@@ -7,8 +7,11 @@ import java.util.List;
 
 public class KontrolTårn {
     private int port;
+//    Listen af alle fly, hentet fra databasen
     private ArrayList<Fly> flyListe;
+//    Listen af alle de fly som inden for 1 time ankommer, er skal blive klar til boarding
     private ArrayList<Fly> aktuelleFly;
+//    Listen af alle de fly som har skabt forbindelse til kontroltårnet, ved brug af protokollen
     private ArrayList<Fly> forbundedeFly;
     private LocalDateTime tidspunkt;
     private Socket server;
