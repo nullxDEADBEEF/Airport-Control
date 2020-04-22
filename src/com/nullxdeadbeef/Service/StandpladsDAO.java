@@ -15,19 +15,37 @@ public class StandpladsDAO {
 
         try (Connection con = DatabaseAdapter.getConnection();
              PreparedStatement ps = con.prepareStatement(sql);
-                     ResultSet rs = ps.executeQuery()) {
+             ResultSet rs = ps.executeQuery()) {
 
             while (rs.next()) {
 
-                /*Standplads standplads = new Standplads();
+                Standplads standplads = new Standplads();
                 standplads.setStandpladsNr(rs.getInt("idBooth"));
-                standplads.setType(rs.getString("type").);
-                standplads.setLedig(rs.getBoolean("available")); */
+                String enums = rs.getString("booth_type");
+                Standplads.Type realEnums = Standplads.Type.valueOf(enums);
+                standplads.setType(realEnums);
+                standplads.setLedig(rs.getBoolean("available"));
+                standpladser.add(standplads);
             }
 
-        } catch(Exception e) {
+
+        } catch (Exception e) {
             System.out.println("Error: " + e);
         }
         return standpladser;
+    }
+
+    public void update(Boolean updateValue, int boothNr) {
+        String sql = "UPDATE booth SET available = ? WHERE idBooth = ?";
+
+        try (Connection con = DatabaseAdapter.getConnection();
+             PreparedStatement ps = con.prepareStatement(sql)) {
+
+            ps.setBoolean(1, updateValue);
+            ps.setInt(2,boothNr);
+            ps.executeUpdate();
+        } catch (Exception e) {
+            System.out.println("Error: " + e);
+        }
     }
 }
