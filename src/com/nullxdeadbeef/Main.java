@@ -1,10 +1,13 @@
 package com.nullxdeadbeef;
 
-import static com.nullxdeadbeef.Service.DatabaseAdapter.getConnection;
+import com.nullxdeadbeef.Service.StandpladsDAO;
 
 public class Main {
 
     public static void main(String[] args) {
-	    getConnection();
+	    StandpladsDAO st = new StandpladsDAO();
+        System.out.println(st.selectAll());
+        st.update(true, 1);
+        System.out.println(st.selectAll());
     }
 }

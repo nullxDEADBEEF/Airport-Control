@@ -10,6 +10,14 @@ public class Standplads {
         SMALL, MEDIUM, BIG
     }
 
+    public Standplads(){}
+
+    public Standplads(int standpladsNr, Type type, Boolean ledig) {
+        this.standpladsNr = standpladsNr;
+        this.type = type;
+        this.ledig = ledig;
+    }
+
     public int getStandpladsNr() {
         return standpladsNr;
     }
@@ -33,4 +41,9 @@ public class Standplads {
     public void setLedig(Boolean ledig) {
         this.ledig = ledig;
     }
+
+    public String toString() {
+        return "Nr: " + standpladsNr + " Type: " + type + " ledig: " + ledig;
+    }
+
 }
