@@ -3,9 +3,9 @@ package com.nullxdeadbeef;
 import java.net.Socket;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
-import java.util.List;
 
-public class KontrolTårn {
+
+public class KontrolTårn extends Thread{
     private int port;
 //    Listen af alle fly, hentet fra databasen
     private ArrayList<Fly> flyListe;
@@ -16,10 +16,34 @@ public class KontrolTårn {
     private LocalDateTime tidspunkt;
     private Socket server;
 
+//    public void run(){
+//        while (true){
+////            Lyt til socket
+//        }
+//    }
+//    public void lyt(){
+//        Thread lyttetråd = new KontrolTårn();
+//        lyttetråd.start();
+//    }
+
+    public void startSimulering(LocalDateTime tidspunkt){
+        this.tidspunkt = tidspunkt;
+        while(true){
+            simulering();
+        }
+    }
+    public LocalDateTime simulering(){
+//        Simuleringskode her
+        inkrementerTidspunkt();
+        return tidspunkt;
+    }
     public void printLog() {}
     public void sendTilAlle() {}
     public void modtagBesked() {}
     public void sendBesked() {}
+    public void inkrementerTidspunkt(){
+        tidspunkt = tidspunkt.plusMinutes(5);
+    }
 
     public int getPort() {
         return port;
@@ -30,6 +54,7 @@ public class KontrolTårn {
     }
 
     public ArrayList<Fly> getFlyListe() {
+//        TODO; hent alle fly ind fra databasen
         return flyListe;
     }
 
@@ -38,6 +63,7 @@ public class KontrolTårn {
     }
 
     public ArrayList<Fly> getAktuelleFly() {
+//        TODO; find de fly i Flyliste, som har afgang eller ankomst inden for 1 time
         return aktuelleFly;
     }
 
