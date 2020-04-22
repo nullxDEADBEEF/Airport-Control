@@ -1,4 +1,4 @@
-package com.nullxdeadbeef;
+package com.nullxdeadbeef.Lufthavnspersonale;
 
 import java.net.Socket;
 
