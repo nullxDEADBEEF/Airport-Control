@@ -1,10 +1,11 @@
 package com.nullxdeadbeef;
 
-enum Type {
-    SMALL, MEDIUM, BIG
-}
 
 public class Standplads {
+    public enum Type {
+        SMALL, MEDIUM, BIG
+    }
+
     private int standpladsNr;
     private Type type;
 
