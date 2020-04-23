@@ -10,6 +10,9 @@ public class Lufthavnspersonale extends Thread {
     private int operationTid;
     private Standplads placering;
 
+    public void run(){
+    }
+
     public void sendBesked() {}
     public void modtagBesked() {}
 
