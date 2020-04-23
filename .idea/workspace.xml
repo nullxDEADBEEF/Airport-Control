@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d972b536-7430-498d-8fe8-b910bf66b687" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/com/nullxdeadbeef/FlyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/com/nullxdeadbeef/FlyTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nullxdeadbeef/Fly.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nullxdeadbeef/Fly.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nullxdeadbeef/TaxiRute.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nullxdeadbeef/Pilot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nullxdeadbeef/Pilot.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -301,11 +300,11 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="992" y="416" key="MultipleFileMergeDialog/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587633801983" />
-    <state x="721" y="266" width="1003" height="708" key="SettingsEditor" timestamp="1587562369294">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state x="585" y="205" width="1003" height="708" key="SettingsEditor" timestamp="1587636308357">
+      <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="721" y="266" width="1381" height="851" key="SettingsEditor/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587562369294" />
-    <state x="585" y="205" width="1003" height="708" key="SettingsEditor/62.0.1858.1080@62.0.1858.1080" timestamp="1587559896188" />
+    <state x="585" y="205" width="1003" height="708" key="SettingsEditor/62.0.1858.1080@62.0.1858.1080" timestamp="1587636308357" />
     <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1587633850038">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -326,5 +325,9 @@
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state width="600" height="424" key="javadoc.popup/62.0.1858.1080@62.0.1858.1080" timestamp="1587540589642" />
+    <state x="647" y="250" key="run.anything.popup" timestamp="1587637059466">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="647" y="250" key="run.anything.popup/62.0.1858.1080@62.0.1858.1080" timestamp="1587637059466" />
   </component>
 </project>
