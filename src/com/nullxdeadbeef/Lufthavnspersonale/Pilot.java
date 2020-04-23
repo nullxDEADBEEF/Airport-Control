@@ -7,6 +7,8 @@ public class Pilot extends Lufthavnspersonale {
 
     public Pilot(Fly fly) {
         this.fly = fly;
+//        Operationstiden for en pilot er tiden det tager at taxie til eller fra standpladsen.
+        setOperationTid(fly.taxi());
     }
 
     public void mayday() {}
