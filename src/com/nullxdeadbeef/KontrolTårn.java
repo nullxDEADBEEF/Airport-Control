@@ -13,12 +13,11 @@ import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
 
-
 public class KontrolTårn {
     private final int PORT = 42069;
 //    Listen af alle fly, hentet fra databasen
     private ArrayList<Fly> flyListe;
-//    Listen af alle de fly som inden for 1 time ankommer, er skal blive klar til boarding
+//    Listen af alle de fly som på den givne dag ankommer, er skal blive klar til boarding
     private ArrayList<Fly> aktuelleFly;
 //    Listen af alle de fly som har skabt forbindelse til kontroltårnet, ved brug af protokollen
     private ArrayList<Fly> forbundedeFly;
@@ -49,6 +48,7 @@ public class KontrolTårn {
             }
         }
     }
+
 //    public void lyt(){
 //        Thread lyttetråd = new KontrolTårn();
 //        lyttetråd.start();
@@ -80,6 +80,7 @@ public class KontrolTårn {
     }
     public void modtagBesked() {}
     public void sendBesked() {}
+
     public void inkrementerTidspunkt(){
         tidspunkt = tidspunkt.plusMinutes(5);
     }
