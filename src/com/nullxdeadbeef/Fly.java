@@ -10,21 +10,28 @@ public class Fly {
     private boolean baggage;
     private boolean brændstof;
 
-    public void passagererAf() {
-        setPassagerer(false);
+    public Fly(String aC, Standplads standplads, FlyRejse flyRejse, TaxiRute taxiRute, boolean passagerer, boolean baggage) {
+        this.aC = aC;
+        this.standplads = standplads;
+        this.flyRejse = flyRejse;
+        this.taxiRute = taxiRute;
+        this.passagerer = passagerer;
+        this.baggage = baggage;
+//        Fly mangler altid brændstof
+        this.brændstof = false;
     }
-    public void baggageAf() {
-        setBaggage(false);
+
+    //    returnerer tiden det tog i minutter
+    public int taxi(){
+        int hastinghedMeterMin = 500;
+        return standplads.getMeterTilLandingsbane() / 500;
     }
-    public void brændstofPå() {
-        setBrændstof(true);
-    }
-    public void baggagePå() {
-        setBaggage(true);
-    }
-    public void passagererPå() {
-        setPassagerer(true);
-    }
+
+    public void passagererAf() {}
+    public void baggageAf() {}
+    public void brændstofPå() {}
+    public void baggagePå() {}
+    public void passagererPå() {}
 
     public String getaC() {
         return aC;
