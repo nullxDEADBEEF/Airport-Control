@@ -4,7 +4,8 @@ package com.nullxdeadbeef;
 public class Standplads {
     private int standpladsNr;
     private Type type;
-    private Boolean ledig;
+    private boolean ledig;
+    private int meterTilLandingsbane;
 
     public enum Type {
         SMALL, MEDIUM, BIG
@@ -12,10 +13,17 @@ public class Standplads {
 
     public Standplads(){}
 
-    public Standplads(int standpladsNr, Type type, Boolean ledig) {
+    public Standplads(int standpladsNr, Type type, boolean ledig) {
         this.standpladsNr = standpladsNr;
         this.type = type;
         this.ledig = ledig;
+    }
+
+    public Standplads(int standpladsNr, Type type, boolean ledig, int meterTilLandingsbane) {
+        this.standpladsNr = standpladsNr;
+        this.type = type;
+        this.ledig = ledig;
+        this.meterTilLandingsbane = meterTilLandingsbane;
     }
 
     public int getStandpladsNr() {
@@ -34,11 +42,11 @@ public class Standplads {
         this.type = type;
     }
 
-    public Boolean getLedig() {
+    public boolean getLedig() {
         return ledig;
     }
 
-    public void setLedig(Boolean ledig) {
+    public void setLedig(boolean ledig) {
         this.ledig = ledig;
     }
 
@@ -46,4 +54,15 @@ public class Standplads {
         return "Nr: " + standpladsNr + " Type: " + type + " ledig: " + ledig;
     }
 
+    public boolean isLedig() {
+        return ledig;
+    }
+
+    public int getMeterTilLandingsbane() {
+        return meterTilLandingsbane;
+    }
+
+    public void setMeterTilLandingsbane(int meterTilLandingsbane) {
+        this.meterTilLandingsbane = meterTilLandingsbane;
+    }
 }

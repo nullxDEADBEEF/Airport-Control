@@ -11,6 +11,17 @@ public class FlyRejse {
     private Time klokkeslæt;
     private String origin_destination;
 
+    public FlyRejse() {
+    }
+
+    public FlyRejse(Date dato, Boolean ankomst, String ruteNr, Time klokkeslæt, String origin_destination) {
+        this.dato = dato;
+        this.ankomst = ankomst;
+        this.ruteNr = ruteNr;
+        this.klokkeslæt = klokkeslæt;
+        this.origin_destination = origin_destination;
+    }
+
     public Date getDato() {
         return dato;
     }
