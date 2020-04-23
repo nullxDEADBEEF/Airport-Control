@@ -25,7 +25,7 @@ public class Fly {
         taxiHastinghedMeterMin = 500;
     }
 
-    //    returnerer tiden det tog i minutter
+    //    returnerer tiden det tager at køre distancen mellem standplads og landingsbane, i minutter
     public int taxi(){
         return this.standplads.getMeterTilLandingsbane() / taxiHastinghedMeterMin;
     }
