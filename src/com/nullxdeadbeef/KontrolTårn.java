@@ -1,12 +1,17 @@
 package com.nullxdeadbeef;
 
+import com.nullxdeadbeef.Service.FlyDAO;
+
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.Vector;
+import java.time.LocalTime;
+import java.time.ZoneId;
+import java.time.format.DateTimeFormatter;
+import java.util.*;
 
 public class KontrolTårn {
     private final int PORT = 42069;
@@ -19,6 +24,7 @@ public class KontrolTårn {
     private LocalDateTime tidspunkt;
     private ServerSocket server;
     private static Vector<Socket> personaleSockets = new Vector<>();
+    private static FlyDAO flyDAO = new FlyDAO();
 
     public void main() {
         Socket clientSocket = null;
@@ -49,12 +55,14 @@ public class KontrolTårn {
 //    }
 
     public void startSimulering(LocalDateTime tidspunkt){
+        flyListe = flyDAO.getAll();
+
         this.tidspunkt = tidspunkt;
         while(true){
             simulering();
         }
     }
-    public LocalDateTime simulering(){
+    public LocalDateTime simulering() {
 //        Simuleringskode her
         inkrementerTidspunkt();
         return tidspunkt;
@@ -90,9 +98,19 @@ public class KontrolTårn {
         this.flyListe = flyListe;
     }
 
-    public ArrayList<Fly> getAktuelleFly() {
-//        TODO; find de fly i Flyliste, som har afgang eller ankomst inden for 1 time
-        return aktuelleFly;
+    // Find fly med afgang eller ankomst inden for tidspunkt
+    public ArrayList<Fly> getAktuelleFly( ArrayList<Fly> alleFly, LocalDateTime tidspunkt ) {
+        ArrayList<Fly> flyISimulation = new ArrayList<>();
+        LocalTime tidspunkTime = tidspunkt.toLocalTime();
+        LocalDate tidspunktDate = tidspunkt.toLocalDate();
+
+        for ( Fly fly : alleFly ) {
+            if ( fly.getFlyRejse().getKlokkeslæt() == tidspunkTime &&
+                    fly.getFlyRejse().getDato() == tidspunktDate ) {
+                flyISimulation.add( fly );
+            }
+        }
+        return flyISimulation;
     }
 
     public void setAktuelleFly(ArrayList<Fly> aktuelleFly) {
