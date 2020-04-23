@@ -24,7 +24,7 @@ class FlyTest {
 
         IOSkriver ioSkriver = new IOSkriver();
         ioSkriver.skrivTilFil(testPilot, testFlyRejse.getKlokkeslæt(), "Dette er en besked til hanne");
-        
+
         assertEquals(2, testPilot.getFly().taxi());
 
     }
