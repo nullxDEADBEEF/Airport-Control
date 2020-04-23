@@ -4,7 +4,7 @@ import com.nullxdeadbeef.Standplads;
 
 import java.net.Socket;
 
-public class Lufthavnspersonale extends Thread{
+public class Lufthavnspersonale extends Thread {
     private int gruppeNr;
     private Socket walkie;
     private int operationTid;
