@@ -5,6 +5,7 @@ import com.nullxdeadbeef.Lufthavnspersonale.Lufthavnspersonale;
 
 import java.io.*;
 import java.time.LocalDateTime;
+import java.time.LocalTime;
 
 public class IOSkriver {
 
@@ -19,9 +20,8 @@ public class IOSkriver {
     String filnavn = "Log-"+date+".txt";
 
     // Hvis et fly skal skrive til fil
-    public boolean skrivTilFil(Fly fly, LocalDateTime tidspunkt) {
+    public boolean skrivTilFil(Fly fly, LocalTime tidspunkt, String besked) {
         try {
-            String filnavn = "Log-"+tidspunkt.getDayOfMonth()+"/"+tidspunkt.getMonth()+"/"+tidspunkt.getYear()+".txt";
             File file = new File("Data/"+filnavn);
 
             // Saetter append til false, saa vi ikke overskriver filen naar vi prover at skrive til den igen
@@ -36,12 +36,11 @@ public class IOSkriver {
             num++;
 
             // Udskriver flyets rutenr.
-            printWriter.print("Fly: "+fly.getFlyRejse().getRuteNr()+": ");
+            printWriter.print("Fly "+fly.getFlyRejse().getRuteNr()+": ");
 
-            // TODO: Her faa udskrevet flyets ordre eller handling
-            printWriter.print(fly);
+            // Skriver beskeden som er sendt over fra parameterne
+            printWriter.println(besked);
 
-            printWriter.println();
             fileWriter.close();
 
             // Retuner at det gik godt
@@ -56,7 +55,7 @@ public class IOSkriver {
     }
 
     // Hvis en personalegruppe skal skrive til en fil
-    public boolean skrivTilFil(Lufthavnspersonale lufthavnspersonale, LocalDateTime tidspunkt){
+    public boolean skrivTilFil(Lufthavnspersonale lufthavnspersonale, LocalTime tidspunkt, String besked){
         try {
             File file = new File("Data/"+filnavn);
 
@@ -71,13 +70,12 @@ public class IOSkriver {
             printWriter.print("Log-"+num+" ");
             num++;
 
-            // Udskriver flyets rutenr.
-            printWriter.print("Personalegruppe: "+lufthavnspersonale.getClass()+": ");
+            // Udskriver personalegruppen.
+            printWriter.print(lufthavnspersonale.getClass().getSimpleName()+": ");
 
-            // TODO: Her faa udskrevet personalegruppens ordre eller handling
-            printWriter.print(lufthavnspersonale);
+            // Skriver beskeden som er sendt over fra parameterne
+            printWriter.println(besked);
 
-            printWriter.println();
             fileWriter.close();
 
             // Retuner at det gik godt
@@ -92,7 +90,7 @@ public class IOSkriver {
     }
 
     // Hvis kontroltaarnet skal skrive til en fil
-    public boolean skrivTilFil(LocalDateTime tidspunkt){
+    public boolean skrivTilFil(LocalTime tidspunkt, String besked){
         try {
             File file = new File("Data/"+filnavn);
 
@@ -107,13 +105,12 @@ public class IOSkriver {
             printWriter.print("Log-"+num+" ");
             num++;
 
-            // Udskriver flyets rutenr.
+            // Udskriver Kontroltaarn:.
             printWriter.print("Kontroltårn: ");
 
-            // TODO: Her faa udskrevet personalegruppens ordre eller handling
-            //printWriter.print();
+            // Skriver beskeden som er sendt over fra parameterne
+            printWriter.println(besked);
 
-            printWriter.println();
             fileWriter.close();
 
             // Retuner at det gik godt
