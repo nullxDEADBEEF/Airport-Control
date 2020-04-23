@@ -1,9 +1,11 @@
 package com.nullxdeadbeef;
 
+import com.nullxdeadbeef.Log.IOSkriver;
 import com.nullxdeadbeef.Lufthavnspersonale.Pilot;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.util.Date;
 
@@ -19,6 +21,11 @@ class FlyTest {
         Fly testFly = new Fly("73H", testStandplads, testFlyRejse, true, true);
         Pilot testPilot = new Pilot(testFly);
 //        Burde tage 2 minutter at køre 1000 meter med 30km/h
+
+        IOSkriver ioSkriver = new IOSkriver();
+        ioSkriver.skrivTilFil(testPilot, testFlyRejse.getKlokkeslæt(), "Dette er en besked til hanne");
+        
         assertEquals(2, testPilot.getFly().taxi());
+
     }
 }
