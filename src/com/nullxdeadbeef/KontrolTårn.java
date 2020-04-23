@@ -1,12 +1,16 @@
 package com.nullxdeadbeef;
 
+import java.io.DataOutputStream;
+import java.io.IOException;
+import java.net.ServerSocket;
 import java.net.Socket;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.Vector;
 
 
-public class KontrolTårn extends Thread{
-    private int port;
+public class KontrolTårn {
+    private final int PORT = 42069;
 //    Listen af alle fly, hentet fra databasen
     private ArrayList<Fly> flyListe;
 //    Listen af alle de fly som inden for 1 time ankommer, er skal blive klar til boarding
@@ -14,14 +18,31 @@ public class KontrolTårn extends Thread{
 //    Listen af alle de fly som har skabt forbindelse til kontroltårnet, ved brug af protokollen
     private ArrayList<Fly> forbundedeFly;
     private LocalDateTime tidspunkt;
-    private Socket server;
+    private ServerSocket server;
+    private static Vector<Socket> personaleSockets = new Vector<>();
 
+    public void main() {
+        Socket clientSocket = null;
+        try {
+            server = new ServerSocket( PORT );
+        } catch ( IOException ex ) {
+            System.out.println( "ERROR" );
+            ex.printStackTrace();
+            System.exit( 1 );
+        }
 
-//    public void run(){
-//        while (true){
-////            Lyt til socket
-//        }
-//    }
+        while (true) {
+            try {
+                clientSocket = server.accept();
+                Runnable r = new KontrolTårnThread( clientSocket );
+                personaleSockets.add( clientSocket );
+                r.run();
+            } catch ( IOException ex ) {
+                ex.printStackTrace();
+                System.exit( 1 );
+            }
+        }
+    }
 //    public void lyt(){
 //        Thread lyttetråd = new KontrolTårn();
 //        lyttetråd.start();
@@ -39,7 +60,16 @@ public class KontrolTårn extends Thread{
         return tidspunkt;
     }
     public void printLog() {}
-    public void sendTilAlle() {}
+    public void sendTilAlle( String message ) {
+        for ( Socket s : personaleSockets ) {
+            try {
+                DataOutputStream out = new DataOutputStream( s.getOutputStream() );
+                out.writeUTF( message );
+            } catch( IOException ex ) {
+                ex.printStackTrace();
+            }
+        }
+    }
     public void modtagBesked() {}
     public void sendBesked() {}
     public void inkrementerTidspunkt(){
@@ -47,11 +77,7 @@ public class KontrolTårn extends Thread{
     }
 
     public int getPort() {
-        return port;
-    }
-
-    public void setPort(int port) {
-        this.port = port;
+        return PORT;
     }
 
     public ArrayList<Fly> getFlyListe() {
@@ -88,11 +114,11 @@ public class KontrolTårn extends Thread{
         this.tidspunkt = tidspunkt;
     }
 
-    public Socket getServer() {
+    public ServerSocket getServer() {
         return server;
     }
 
-    public void setServer(Socket server) {
+    public void setServer(ServerSocket server) {
         this.server = server;
     }
 }

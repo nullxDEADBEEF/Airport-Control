@@ -1,6 +1,7 @@
 package com.nullxdeadbeef;
 
 import java.sql.Time;
+import java.time.LocalTime;
 import java.util.Date;
 
 public class FlyRejse {
@@ -8,7 +9,7 @@ public class FlyRejse {
     private Date dato;
     private Boolean ankomst;
     private String ruteNr;
-    private Time klokkeslæt;
+    private LocalTime klokkeslæt;
     private String origin_destination;
 
     public Date getDato() {
