@@ -13,7 +13,7 @@ public class FlyDAO {
     }
 
 
-    public ArrayList<Fly> selectAll() {
+    public ArrayList<Fly> getAll() {
         ArrayList<Fly> alleFly = new ArrayList<>();
 
         String sql = "SELECT * FROM Fly";

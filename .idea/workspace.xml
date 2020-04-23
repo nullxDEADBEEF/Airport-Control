@@ -2,24 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d972b536-7430-498d-8fe8-b910bf66b687" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_191.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/nullxdeadbeef/KontrolTårnThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_19.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_19.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/com/nullxdeadbeef/FlyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/nullxdeadbeef/Log/IOSkriver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/nullxdeadbeef/Lufthavnspersonale/Bagage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/nullxdeadbeef/Lufthavnspersonale/Brændstof.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/nullxdeadbeef/Lufthavnspersonale/Gate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/airport-control.iml" beforeDir="false" afterPath="$PROJECT_DIR$/airport-control.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/KontrolTårn.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/KontrolTårn.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/Lufthavnspersonale.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/Pilot.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/Service/DatabaseAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/Service/DatabaseAdapter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nullxdeadbeef/Fly.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nullxdeadbeef/Fly.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/nullxdeadbeef/FlyRejse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nullxdeadbeef/FlyRejse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/nullxdeadbeef/KontrolTårn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nullxdeadbeef/KontrolTårn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nullxdeadbeef/KontrolTårnThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nullxdeadbeef/KontrolTårnThread.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/nullxdeadbeef/Lufthavnspersonale/Lufthavnspersonale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nullxdeadbeef/Lufthavnspersonale/Lufthavnspersonale.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nullxdeadbeef/Service/DatabaseAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nullxdeadbeef/Service/DatabaseAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nullxdeadbeef/Lufthavnspersonale/Pilot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nullxdeadbeef/Lufthavnspersonale/Pilot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nullxdeadbeef/Service/FlyDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nullxdeadbeef/Service/FlyDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nullxdeadbeef/Service/FlyRejseDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nullxdeadbeef/Service/FlyRejseDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nullxdeadbeef/Standplads.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nullxdeadbeef/Standplads.java" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,7 +55,8 @@
     <select />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="isMigrated" value="true" />
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -72,20 +72,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/nullxdeadbeef/FlyRejse.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="33" lean-forward="true" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="150">
+              <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/nullxdeadbeef/KontrolTårn.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+            <state relative-caret-position="264">
+              <caret line="94" column="5" lean-forward="true" selection-start-line="94" selection-start-column="5" selection-end-line="94" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -93,7 +90,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/nullxdeadbeef/Service/DatabaseAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
+            <state relative-caret-position="90">
               <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -114,11 +111,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/nullxdeadbeef/Service/FlyRejseDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="22" column="50" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
+            <state relative-caret-position="330">
+              <caret line="22" column="50" lean-forward="true" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -170,26 +167,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/com/nullxdeadbeef/FlyRejse.java" />
-        <option value="$PROJECT_DIR$/src/com/nullxdeadbeef/Service/FlyRejseDAO.java" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="y" value="23" />
-    <option name="width" value="1680" />
-    <option name="height" value="1027" />
   </component>
   <component name="ProjectId" id="1at1RuGPKmYIYySEyO0gVQr0j43" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -293,7 +277,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
@@ -319,7 +303,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.KontrolTårnTest.inkrementerTidspunkt">
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.nullxdeadbeef.Main" />
       <module name="airport-control" />
@@ -381,7 +365,7 @@
       <updated>1587540070708</updated>
       <workItem from="1587540073578" duration="725000" />
       <workItem from="1587541144538" duration="3259000" />
-      <workItem from="1587627341031" duration="352000" />
+      <workItem from="1587623898180" duration="6265000" />
     </task>
     <task id="LOCAL-00001" summary="fly og flyrejse">
       <created>1587548954547</created>
@@ -411,22 +395,31 @@
       <option name="project" value="LOCAL" />
       <updated>1587558452138</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Tilfoejet personale">
+      <created>1587630585299</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1587630585299</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Begyndt på TASK 1.14, samt TASK 1.12">
+      <created>1587633701121</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1587633701121</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
-  <component name="TestHistory">
-    <history-entry file="KontrolTårnTest_inkrementerTidspunkt - 2020.04.22 at 15h 32m 44s.xml">
-      <configuration name="KontrolTårnTest.inkrementerTidspunkt" configurationId="JUnit" />
-    </history-entry>
-  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="958000" />
+    <option name="totallyTimeSpent" value="374000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2536349" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2536349" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -496,7 +489,9 @@
     <MESSAGE value="fly og flyrejse" />
     <MESSAGE value="tårn" />
     <MESSAGE value="rettelser og begyndt paa testing" />
-    <option name="LAST_COMMIT_MESSAGE" value="rettelser og begyndt paa testing" />
+    <MESSAGE value="Tilfoejet personale" />
+    <MESSAGE value="Begyndt på TASK 1.14, samt TASK 1.12" />
+    <option name="LAST_COMMIT_MESSAGE" value="Begyndt på TASK 1.14, samt TASK 1.12" />
   </component>
   <component name="WindowStateProjectService">
     <state x="877" y="350" key="#KontrolTårnTest.startSimulering" timestamp="1587558245631">
@@ -507,83 +502,91 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="872" y="358" key="#Notifications/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587549010769" />
-    <state x="1011" y="290" key="#com.intellij.ide.util.MemberChooser" timestamp="1587555358551">
+    <state x="1011" y="290" key="#com.intellij.ide.util.MemberChooser" timestamp="1587633824464">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1011" y="290" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587555358551" />
+    <state x="1011" y="290" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587633824464" />
     <state x="796" y="224" key="#com.intellij.ide.util.MemberChooser/62.0.1858.1080@62.0.1858.1080" timestamp="1587540777431" />
     <state x="1128" y="589" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1587559148021">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1128" y="589" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587559148021" />
-    <state x="887" y="294" key="CommitChangelistDialog2" timestamp="1587558450940">
+    <state x="1010" y="447" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1587633369723">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="887" y="294" key="CommitChangelistDialog2/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587558450940" />
+    <state x="1010" y="447" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587633369723" />
+    <state x="887" y="294" key="CommitChangelistDialog2" timestamp="1587633699873">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="887" y="294" key="CommitChangelistDialog2/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587633699873" />
     <state x="960" y="453" key="FileChooserDialogImpl" timestamp="1587548729553">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="960" y="453" key="FileChooserDialogImpl/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587548729553" />
-    <state width="2517" height="273" key="GridCell.Tab.0.bottom" timestamp="1587558417347">
+    <state width="2517" height="273" key="GridCell.Tab.0.bottom" timestamp="1587565915780">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="273" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587558417347" />
-    <state width="2517" height="273" key="GridCell.Tab.0.center" timestamp="1587558417347">
+    <state width="2517" height="273" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587565915780" />
+    <state width="2517" height="273" key="GridCell.Tab.0.center" timestamp="1587565915780">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="273" key="GridCell.Tab.0.center/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587558417347" />
-    <state width="2517" height="273" key="GridCell.Tab.0.left" timestamp="1587558417346">
+    <state width="2517" height="273" key="GridCell.Tab.0.center/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587565915780" />
+    <state width="2517" height="273" key="GridCell.Tab.0.left" timestamp="1587565915779">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="273" key="GridCell.Tab.0.left/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587558417346" />
-    <state width="2517" height="273" key="GridCell.Tab.0.right" timestamp="1587558417347">
+    <state width="2517" height="273" key="GridCell.Tab.0.left/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587565915779" />
+    <state width="2517" height="273" key="GridCell.Tab.0.right" timestamp="1587565915780">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="273" key="GridCell.Tab.0.right/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587558417347" />
-    <state x="585" y="205" width="1003" height="708" key="SettingsEditor" timestamp="1587559896189">
-      <screen x="62" y="0" width="1858" height="1080" />
+    <state width="2517" height="273" key="GridCell.Tab.0.right/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587565915780" />
+    <state x="263" y="136" key="MergeDialog" timestamp="1587633799346">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="721" y="266" width="1381" height="851" key="SettingsEditor/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587549268512" />
+    <state x="263" y="136" key="MergeDialog/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587633799346" />
+    <state x="992" y="416" key="MultipleFileMergeDialog" timestamp="1587633801983">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="992" y="416" key="MultipleFileMergeDialog/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587633801983" />
+    <state x="721" y="266" width="1003" height="708" key="SettingsEditor" timestamp="1587562369294">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="721" y="266" width="1381" height="851" key="SettingsEditor/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587562369294" />
     <state x="585" y="205" width="1003" height="708" key="SettingsEditor/62.0.1858.1080@62.0.1858.1080" timestamp="1587559896188" />
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1587558467413">
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1587630593316">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587558467413" />
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587630593316" />
     <state x="984" y="593" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1587548290516">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="984" y="593" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587548290516" />
-    <state x="1051" y="418" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1587555536683">
+    <state x="1051" y="418" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1587632918229">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1051" y="418" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587555536683" />
-    <state x="982" y="491" key="git4idea.merge.GitPullDialog" timestamp="1587558456919">
+    <state x="1051" y="418" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587632918229" />
+    <state x="982" y="491" key="git4idea.merge.GitPullDialog" timestamp="1587633718503">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="982" y="491" key="git4idea.merge.GitPullDialog/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587558456919" />
+    <state x="982" y="491" key="git4idea.merge.GitPullDialog/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587633718503" />
     <state width="600" height="424" key="javadoc.popup" timestamp="1587540589642">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state width="600" height="424" key="javadoc.popup/62.0.1858.1080@62.0.1858.1080" timestamp="1587540589642" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/nullxdeadbeef/Fly.java">
+    <entry file="file://$PROJECT_DIR$/src/com/nullxdeadbeef/Service/FlyRejseDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/nullxdeadbeef/KontrolTårn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        <state relative-caret-position="330">
+          <caret line="22" column="50" lean-forward="true" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/nullxdeadbeef/Service/DatabaseAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
+        <state relative-caret-position="90">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -591,139 +594,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/nullxdeadbeef/Service/FlyDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/com/nullxdeadbeef/KontrolTårn.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="22" column="48" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="264">
+          <caret line="94" column="5" lean-forward="true" selection-start-line="94" selection-start-column="5" selection-end-line="94" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/nullxdeadbeef/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/nullxdeadbeef/Standplads.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/nullxdeadbeef/Terminal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="50" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/nullxdeadbeef/Service/StandpladsDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/nullxdeadbeef/FlyRejse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="33" lean-forward="true" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/nullxdeadbeef/Service/FlyRejseDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="22" column="50" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>airport-control</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>mysql-connector-java-8.0.191</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>
