@@ -9,6 +9,10 @@ public class Pilot extends Thread {
     private Fly fly;
     private Socket socket;
 
+    public Pilot(Fly fly) {
+        this.fly = fly;
+    }
+
     @Override
     public void run() {
         sendBesked( "FORBIND_FLY " + fly.getaC() + ", " + fly.getFlyRejse().getRuteNr() );

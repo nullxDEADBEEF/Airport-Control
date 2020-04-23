@@ -1,7 +1,6 @@
 package com.nullxdeadbeef;
 
-import java.time.LocalDate;
-import java.time.LocalTime;
+import java.time.*;
 
 public class FlyRejse {
 
