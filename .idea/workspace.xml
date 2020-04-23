@@ -173,7 +173,8 @@
       <updated>1587540070708</updated>
       <workItem from="1587540073578" duration="725000" />
       <workItem from="1587541144538" duration="3259000" />
-      <workItem from="1587623898180" duration="13495000" />
+      <workItem from="1587623898180" duration="13575000" />
+      <workItem from="1587645535490" duration="615000" />
     </task>
     <task id="LOCAL-00001" summary="fly og flyrejse">
       <created>1587548954547</created>
@@ -252,7 +253,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587643266374</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="pull">
+      <created>1587645494991</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1587645494991</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,7 +278,8 @@
     <MESSAGE value="comments" />
     <MESSAGE value="Lufthavnspersonale run skelet" />
     <MESSAGE value="lille tilfoejelse til pilot. operationTid tilfoejet." />
-    <option name="LAST_COMMIT_MESSAGE" value="lille tilfoejelse til pilot. operationTid tilfoejet." />
+    <MESSAGE value="pull" />
+    <option name="LAST_COMMIT_MESSAGE" value="pull" />
   </component>
   <component name="WindowStateProjectService">
     <state x="877" y="350" key="#KontrolTårnTest.startSimulering" timestamp="1587558245631">
@@ -298,30 +307,34 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1010" y="447" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587633369723" />
-    <state x="887" y="294" key="CommitChangelistDialog2" timestamp="1587645466639">
+    <state x="887" y="294" key="CommitChangelistDialog2" timestamp="1587645494446">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="887" y="294" key="CommitChangelistDialog2/0.0.2560.1400/-1080.-134.1080.1920/2560.-505.2560.1440@0.0.2560.1400" timestamp="1587645466639" />
+    <state x="887" y="294" key="CommitChangelistDialog2/0.0.2560.1400/-1080.-134.1080.1920/2560.-505.2560.1440@0.0.2560.1400" timestamp="1587645494446" />
     <state x="887" y="294" key="CommitChangelistDialog2/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587636595950" />
     <state x="960" y="453" key="FileChooserDialogImpl" timestamp="1587548729553">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="960" y="453" key="FileChooserDialogImpl/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587548729553" />
-    <state width="2517" height="211" key="GridCell.Tab.0.bottom" timestamp="1587635173497">
+    <state width="2517" height="211" key="GridCell.Tab.0.bottom" timestamp="1587645525806">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
+    <state width="2517" height="211" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1080.-134.1080.1920/2560.-505.2560.1440@0.0.2560.1400" timestamp="1587645525806" />
     <state width="2517" height="211" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587635173497" />
-    <state width="2517" height="211" key="GridCell.Tab.0.center" timestamp="1587635173497">
+    <state width="2517" height="211" key="GridCell.Tab.0.center" timestamp="1587645525805">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
+    <state width="2517" height="211" key="GridCell.Tab.0.center/0.0.2560.1400/-1080.-134.1080.1920/2560.-505.2560.1440@0.0.2560.1400" timestamp="1587645525805" />
     <state width="2517" height="211" key="GridCell.Tab.0.center/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587635173497" />
-    <state width="2517" height="211" key="GridCell.Tab.0.left" timestamp="1587635173497">
+    <state width="2517" height="211" key="GridCell.Tab.0.left" timestamp="1587645525805">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
+    <state width="2517" height="211" key="GridCell.Tab.0.left/0.0.2560.1400/-1080.-134.1080.1920/2560.-505.2560.1440@0.0.2560.1400" timestamp="1587645525805" />
     <state width="2517" height="211" key="GridCell.Tab.0.left/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587635173497" />
-    <state width="2517" height="211" key="GridCell.Tab.0.right" timestamp="1587635173497">
+    <state width="2517" height="211" key="GridCell.Tab.0.right" timestamp="1587645525806">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
+    <state width="2517" height="211" key="GridCell.Tab.0.right/0.0.2560.1400/-1080.-134.1080.1920/2560.-505.2560.1440@0.0.2560.1400" timestamp="1587645525806" />
     <state width="2517" height="211" key="GridCell.Tab.0.right/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587635173497" />
     <state x="263" y="136" key="MergeDialog" timestamp="1587633799346">
       <screen x="0" y="0" width="2560" height="1400" />
@@ -349,10 +362,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1051" y="418" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587632918229" />
-    <state x="982" y="491" key="git4idea.merge.GitPullDialog" timestamp="1587645470389">
+    <state x="982" y="491" key="git4idea.merge.GitPullDialog" timestamp="1587646231464">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="982" y="491" key="git4idea.merge.GitPullDialog/0.0.2560.1400/-1080.-134.1080.1920/2560.-505.2560.1440@0.0.2560.1400" timestamp="1587645470389" />
+    <state x="982" y="491" key="git4idea.merge.GitPullDialog/0.0.2560.1400/-1080.-134.1080.1920/2560.-505.2560.1440@0.0.2560.1400" timestamp="1587646231464" />
     <state x="982" y="491" key="git4idea.merge.GitPullDialog/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587640735071" />
     <state width="600" height="424" key="javadoc.popup" timestamp="1587540589642">
       <screen x="62" y="0" width="1858" height="1080" />
