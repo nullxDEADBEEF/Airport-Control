@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d972b536-7430-498d-8fe8-b910bf66b687" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/nullxdeadbeef/KontrolTårnThread.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nullxdeadbeef/FlyRejse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nullxdeadbeef/FlyRejse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/nullxdeadbeef/KontrolTårn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nullxdeadbeef/KontrolTårn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nullxdeadbeef/Service/FlyDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nullxdeadbeef/Service/FlyDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nullxdeadbeef/Service/FlyRejseDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nullxdeadbeef/Service/FlyRejseDAO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,17 +29,6 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="airport@localhost" type="feb32156:DbDataSourceImpl" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="airport@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="airport@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="airport: schema" type="76f4a085:MysqlImplModel$Schema" />
-      </path>
     </expand>
     <select />
   </component>
@@ -55,11 +46,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="y" value="23" />
-    <option name="width" value="1680" />
-    <option name="height" value="1027" />
   </component>
   <component name="ProjectId" id="1at1RuGPKmYIYySEyO0gVQr0j43" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -163,6 +149,7 @@
       <updated>1587540070708</updated>
       <workItem from="1587540073578" duration="725000" />
       <workItem from="1587541144538" duration="3259000" />
+      <workItem from="1587625607828" duration="5446000" />
     </task>
     <task id="LOCAL-00001" summary="fly og flyrejse">
       <created>1587548954547</created>
@@ -192,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587558452138</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Tilføjet threads til kontroltårn">
+      <created>1587562243262</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1587562243262</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,7 +197,8 @@
     <MESSAGE value="fly og flyrejse" />
     <MESSAGE value="tårn" />
     <MESSAGE value="rettelser og begyndt paa testing" />
-    <option name="LAST_COMMIT_MESSAGE" value="rettelser og begyndt paa testing" />
+    <MESSAGE value="Tilføjet threads til kontroltårn" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tilføjet threads til kontroltårn" />
   </component>
   <component name="WindowStateProjectService">
     <state x="877" y="350" key="#KontrolTårnTest.startSimulering" timestamp="1587558245631">
@@ -223,39 +218,49 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1128" y="589" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587559148021" />
-    <state x="887" y="294" key="CommitChangelistDialog2" timestamp="1587558450940">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state x="706" y="227" key="CommitChangelistDialog2" timestamp="1587562242603">
+      <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="887" y="294" key="CommitChangelistDialog2/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587558450940" />
+    <state x="706" y="227" key="CommitChangelistDialog2/62.0.1858.1080@62.0.1858.1080" timestamp="1587562242603" />
     <state x="960" y="453" key="FileChooserDialogImpl" timestamp="1587548729553">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="960" y="453" key="FileChooserDialogImpl/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587548729553" />
-    <state width="2517" height="273" key="GridCell.Tab.0.bottom" timestamp="1587558417347">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state width="1815" height="294" key="GridCell.Tab.0.bottom" timestamp="1587564184701">
+      <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state width="2517" height="273" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587558417347" />
-    <state width="2517" height="273" key="GridCell.Tab.0.center" timestamp="1587558417347">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state width="1815" height="294" key="GridCell.Tab.0.bottom/62.0.1858.1080@62.0.1858.1080" timestamp="1587564184701" />
+    <state width="1815" height="294" key="GridCell.Tab.0.center" timestamp="1587564184701">
+      <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state width="2517" height="273" key="GridCell.Tab.0.center/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587558417347" />
-    <state width="2517" height="273" key="GridCell.Tab.0.left" timestamp="1587558417346">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state width="1815" height="294" key="GridCell.Tab.0.center/62.0.1858.1080@62.0.1858.1080" timestamp="1587564184701" />
+    <state width="1815" height="294" key="GridCell.Tab.0.left" timestamp="1587564184700">
+      <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state width="2517" height="273" key="GridCell.Tab.0.left/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587558417346" />
-    <state width="2517" height="273" key="GridCell.Tab.0.right" timestamp="1587558417347">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state width="1815" height="294" key="GridCell.Tab.0.left/62.0.1858.1080@62.0.1858.1080" timestamp="1587564184700" />
+    <state width="1815" height="294" key="GridCell.Tab.0.right" timestamp="1587564184701">
+      <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state width="2517" height="273" key="GridCell.Tab.0.right/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587558417347" />
+    <state width="1815" height="294" key="GridCell.Tab.0.right/62.0.1858.1080@62.0.1858.1080" timestamp="1587564184701" />
     <state x="585" y="205" width="1003" height="708" key="SettingsEditor" timestamp="1587559896189">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="721" y="266" width="1381" height="851" key="SettingsEditor/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587549268512" />
     <state x="585" y="205" width="1003" height="708" key="SettingsEditor/62.0.1858.1080@62.0.1858.1080" timestamp="1587559896188" />
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1587558467413">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state x="695" y="334" key="Vcs.Push.Dialog.v2" timestamp="1587562263778">
+      <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587558467413" />
+    <state x="695" y="334" key="Vcs.Push.Dialog.v2/62.0.1858.1080@62.0.1858.1080" timestamp="1587562263778" />
+    <state x="687" y="364" key="com.intellij.ide.util.TipDialog" timestamp="1587625606891">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="687" y="364" key="com.intellij.ide.util.TipDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1587625606891" />
     <state x="984" y="593" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1587548290516">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -264,10 +269,11 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1051" y="418" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587555536683" />
-    <state x="982" y="491" key="git4idea.merge.GitPullDialog" timestamp="1587558456919">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state x="775" y="379" key="git4idea.merge.GitPullDialog" timestamp="1587629621610">
+      <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="982" y="491" key="git4idea.merge.GitPullDialog/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587558456919" />
+    <state x="775" y="379" key="git4idea.merge.GitPullDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1587629621610" />
     <state width="600" height="424" key="javadoc.popup" timestamp="1587540589642">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>

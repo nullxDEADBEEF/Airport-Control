@@ -5,6 +5,7 @@ import com.nullxdeadbeef.FlyRejse;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.Time;
 import java.util.ArrayList;
 
 public class FlyRejseDAO {
@@ -20,7 +21,7 @@ public class FlyRejseDAO {
             ps.setString(1, flyRejse.getDato().toString());
             ps.setBoolean(2, flyRejse.getAnkomst());
             ps.setString(3, flyRejse.getRuteNr());
-            ps.setTime(4, flyRejse.getKlokkeslæt());
+            ps.setTime(4, Time.valueOf(flyRejse.getKlokkeslæt()));
             ps.setString(5,flyRejse.getOrigin_destination());
 
         } catch (Exception e) {
@@ -39,10 +40,10 @@ public class FlyRejseDAO {
 
             while (rs.next()) {
                 FlyRejse flyRejse = new FlyRejse();
-                flyRejse.setDato(rs.getDate("date"));
+                flyRejse.setDato(rs.getDate("date").toLocalDate());
                 flyRejse.setAnkomst(rs.getBoolean("arrival"));
                 flyRejse.setRuteNr(rs.getString("route_nr"));
-                flyRejse.setKlokkeslæt(rs.getTime("STA/STD"));
+                flyRejse.setKlokkeslæt(rs.getTime("STA/STD").toLocalTime());
                 flyRejse.setOrigin_destination(rs.getString("origin/destination"));
                 flyRejser.add(flyRejse);
             }

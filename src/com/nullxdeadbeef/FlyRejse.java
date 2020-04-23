@@ -1,21 +1,21 @@
 package com.nullxdeadbeef;
 
-import java.sql.Time;
-import java.util.Date;
+import java.time.LocalDate;
+import java.time.LocalTime;
 
 public class FlyRejse {
 
-    private Date dato;
+    private LocalDate dato;
     private Boolean ankomst;
     private String ruteNr;
-    private Time klokkeslæt;
+    private LocalTime klokkeslæt;
     private String origin_destination;
 
-    public Date getDato() {
+    public LocalDate getDato() {
         return dato;
     }
 
-    public void setDato(Date dato) {
+    public void setDato(LocalDate dato) {
         this.dato = dato;
     }
 
@@ -35,11 +35,11 @@ public class FlyRejse {
         this.ruteNr = ruteNr;
     }
 
-    public Time getKlokkeslæt() {
+    public LocalTime getKlokkeslæt() {
         return klokkeslæt;
     }
 
-    public void setKlokkeslæt(Time klokkeslæt) {
+    public void setKlokkeslæt(LocalTime klokkeslæt) {
         this.klokkeslæt = klokkeslæt;
     }
 
