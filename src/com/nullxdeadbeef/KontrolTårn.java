@@ -64,7 +64,13 @@ public class KontrolTårn {
     }
     public LocalDateTime simulering() {
 //        Simuleringskode her
-        inkrementerTidspunkt();
+        while ( true ) {
+            ArrayList<Fly> aktuelleFly = getAktuelleFly( flyListe, tidspunkt );
+            inkrementerTidspunkt();
+            // TODO: remember to remove ;)
+            break;
+        }
+
         return tidspunkt;
     }
     public void printLog() {}
