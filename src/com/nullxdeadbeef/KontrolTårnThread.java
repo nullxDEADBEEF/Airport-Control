@@ -39,5 +39,4 @@ public class KontrolTårnThread implements Runnable {
             }
         }
     }
-
 }

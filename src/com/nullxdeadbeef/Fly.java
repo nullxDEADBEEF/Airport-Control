@@ -4,11 +4,31 @@ public class Fly {
     private String aC;
     private Standplads standplads;
     private FlyRejse flyRejse;
-    private TaxiRute taxiRute;
     private Status status;
     private boolean passagerer;
     private boolean baggage;
     private boolean brændstof;
+    private int taxiHastinghedMeterMin;
+
+    public Fly() {
+    }
+
+    public Fly(String aC, Standplads standplads, FlyRejse flyRejse, boolean passagerer, boolean baggage) {
+        this.aC = aC;
+        this.standplads = standplads;
+        this.flyRejse = flyRejse;
+        this.passagerer = passagerer;
+        this.baggage = baggage;
+//        Fly mangler altid brændstof
+        this.brændstof = false;
+//        500 Meter/Min = 30 KM/H
+        taxiHastinghedMeterMin = 500;
+    }
+
+    //    returnerer tiden det tog i minutter
+    public int taxi(){
+        return this.standplads.getMeterTilLandingsbane() / taxiHastinghedMeterMin;
+    }
 
     public void passagererAf() {}
     public void baggageAf() {}
@@ -40,13 +60,6 @@ public class Fly {
         this.flyRejse = flyRejse;
     }
 
-    public TaxiRute getTaxiRute() {
-        return taxiRute;
-    }
-
-    public void setTaxiRute(TaxiRute taxiRute) {
-        this.taxiRute = taxiRute;
-    }
 
     public Status getStatus() {
         return status;
