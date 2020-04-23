@@ -2,8 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d972b536-7430-498d-8fe8-b910bf66b687" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Test/com/nullxdeadbeef/IOTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/Log-2020-04-23.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Log-2020-04-23.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test/com/nullxdeadbeef/FlyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/com/nullxdeadbeef/FlyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/Fly.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/Fly.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/FlyRejse.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/FlyRejse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/KontrolTårn.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/KontrolTårn.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/KontrolTårnThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/KontrolTårnThread.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/Lufthavnspersonale/Lufthavnspersonale.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/Lufthavnspersonale/Lufthavnspersonale.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/Lufthavnspersonale/Pilot.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/Lufthavnspersonale/Pilot.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/Service/DatabaseAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/Service/DatabaseAdapter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/Service/FlyDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/Service/FlyDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/Service/FlyRejseDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/Service/FlyRejseDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/Service/StandpladsDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/Service/StandpladsDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/Service/TerminalDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/Service/TerminalDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/Standplads$Type.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/Standplads$Type.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/Standplads.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/Standplads.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/Status.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/Status.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/Terminal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/Terminal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/airport-control/com/nullxdeadbeef/FlyTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/airport-control/com/nullxdeadbeef/FlyTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/airport-control/com/nullxdeadbeef/KontrolTårnTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/airport-control/com/nullxdeadbeef/KontrolTårnTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/airport-control/com/nullxdeadbeef/Service/DatabaseAdapterTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/airport-control/com/nullxdeadbeef/Service/DatabaseAdapterTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nullxdeadbeef/Log/IOSkriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nullxdeadbeef/Log/IOSkriver.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,8 +75,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -100,7 +123,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FlyTest.taxi">
+  <component name="RunManager" selected="JUnit.IOTest.ioTest">
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.nullxdeadbeef.Main" />
       <module name="airport-control" />
@@ -122,6 +145,22 @@
       <option name="PACKAGE_NAME" value="com.nullxdeadbeef" />
       <option name="MAIN_CLASS_NAME" value="com.nullxdeadbeef.FlyTest" />
       <option name="METHOD_NAME" value="taxi" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IOTest.ioTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="airport-control" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nullxdeadbeef.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.nullxdeadbeef" />
+      <option name="MAIN_CLASS_NAME" value="com.nullxdeadbeef.IOTest" />
+      <option name="METHOD_NAME" value="ioTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -161,6 +200,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.IOTest.ioTest" />
         <item itemvalue="JUnit.FlyTest.taxi" />
         <item itemvalue="JUnit.KontrolTårnTest.inkrementerTidspunkt" />
         <item itemvalue="JUnit.KontrolTårnTest.startSimulering" />
@@ -256,7 +296,21 @@
       <option name="project" value="LOCAL" />
       <updated>1587636596888</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Commit to pull">
+      <created>1587643886682</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1587643886682</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Commit to pull">
+      <created>1587643953594</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1587643953594</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -272,7 +326,8 @@
     <MESSAGE value="after merge" />
     <MESSAGE value="lavet test af taxi metoden i fly." />
     <MESSAGE value="comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="comments" />
+    <MESSAGE value="Commit to pull" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit to pull" />
   </component>
   <component name="WindowStateProjectService">
     <state x="877" y="350" key="#KontrolTårnTest.startSimulering" timestamp="1587558245631">
@@ -288,9 +343,10 @@
     </state>
     <state x="1011" y="290" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587636245675" />
     <state x="796" y="224" key="#com.intellij.ide.util.MemberChooser/62.0.1858.1080@62.0.1858.1080" timestamp="1587540777431" />
-    <state x="1128" y="589" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1587635262079">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state x="846" y="438" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1587643990853">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="846" y="438" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587643990853" />
     <state x="1128" y="589" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587635262079" />
     <state x="1010" y="447" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1587634569106">
       <screen x="0" y="0" width="2560" height="1400" />
@@ -300,43 +356,45 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1010" y="447" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587633369723" />
-    <state x="665" y="218" key="CommitChangelistDialog2" timestamp="1587643885846">
+    <state x="665" y="218" key="CommitChangelistDialog2" timestamp="1587645715565">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="665" y="218" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587643885846" />
+    <state x="665" y="218" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587645715565" />
     <state x="887" y="294" key="CommitChangelistDialog2/0.0.2560.1400/-1080.-134.1080.1920/2560.-505.2560.1440@0.0.2560.1400" timestamp="1587643129791" />
     <state x="887" y="294" key="CommitChangelistDialog2/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587636595950" />
     <state x="960" y="453" key="FileChooserDialogImpl" timestamp="1587548729553">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="960" y="453" key="FileChooserDialogImpl/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587548729553" />
-    <state width="938" height="267" key="GridCell.Tab.0.bottom" timestamp="1587643591828">
+    <state width="1877" height="267" key="GridCell.Tab.0.bottom" timestamp="1587645332408">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="267" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587643591828" />
+    <state width="1877" height="267" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587645332408" />
     <state width="2517" height="211" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587635173497" />
-    <state width="938" height="267" key="GridCell.Tab.0.center" timestamp="1587643591828">
+    <state width="1877" height="267" key="GridCell.Tab.0.center" timestamp="1587645332408">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="267" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587643591828" />
+    <state width="1877" height="267" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587645332408" />
     <state width="2517" height="211" key="GridCell.Tab.0.center/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587635173497" />
-    <state width="938" height="267" key="GridCell.Tab.0.left" timestamp="1587643591828">
+    <state width="1877" height="267" key="GridCell.Tab.0.left" timestamp="1587645332408">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="267" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587643591828" />
+    <state width="1877" height="267" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587645332408" />
     <state width="2517" height="211" key="GridCell.Tab.0.left/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587635173497" />
-    <state width="938" height="267" key="GridCell.Tab.0.right" timestamp="1587643591828">
+    <state width="1877" height="267" key="GridCell.Tab.0.right" timestamp="1587645332408">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="267" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587643591828" />
+    <state width="1877" height="267" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587645332408" />
     <state width="2517" height="211" key="GridCell.Tab.0.right/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587635173497" />
-    <state x="263" y="136" key="MergeDialog" timestamp="1587633799346">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state x="197" y="101" key="MergeDialog" timestamp="1587643979302">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="197" y="101" key="MergeDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587643979302" />
     <state x="263" y="136" key="MergeDialog/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587633799346" />
-    <state x="992" y="416" key="MultipleFileMergeDialog" timestamp="1587633801983">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state x="526" y="245" key="MultipleFileMergeDialog" timestamp="1587643982938">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="526" y="245" key="MultipleFileMergeDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587643982938" />
     <state x="992" y="416" key="MultipleFileMergeDialog/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587633801983" />
     <state x="721" y="266" width="1003" height="708" key="SettingsEditor" timestamp="1587562369294">
       <screen x="0" y="0" width="2560" height="1400" />
@@ -357,10 +415,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1051" y="418" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587632918229" />
-    <state x="737" y="365" key="git4idea.merge.GitPullDialog" timestamp="1587643889435">
+    <state x="737" y="365" key="git4idea.merge.GitPullDialog" timestamp="1587643956779">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="737" y="365" key="git4idea.merge.GitPullDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587643889435" />
+    <state x="737" y="365" key="git4idea.merge.GitPullDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587643956779" />
     <state x="982" y="491" key="git4idea.merge.GitPullDialog/0.0.2560.1400/-1080.-134.1080.1920/2560.-505.2560.1440@0.0.2560.1400" timestamp="1587643135271" />
     <state x="982" y="491" key="git4idea.merge.GitPullDialog/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587640735071" />
     <state width="600" height="424" key="javadoc.popup" timestamp="1587540589642">
