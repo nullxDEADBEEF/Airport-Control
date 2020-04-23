@@ -15,7 +15,7 @@ public class IOSkriver {
     int num=1;
 
     // Saetter filnavn til Log-tidspunkt.txt
-    // Eks. Log-30/10/2020.txt
+    // Eks. Log-2020-05-26.txt
     String filnavn = "Log-"+date+".txt";
 
     // Hvis et fly skal skrive til fil
@@ -25,7 +25,7 @@ public class IOSkriver {
             File file = new File("Data/"+filnavn);
 
             // Saetter append til false, saa vi ikke overskriver filen naar vi prover at skrive til den igen
-            FileWriter fileWriter = new FileWriter(file, false);
+            FileWriter fileWriter = new FileWriter(file, true);
             PrintWriter printWriter = new PrintWriter(fileWriter);
 
             // Udskriver Tidspunkt som det forste
@@ -41,6 +41,7 @@ public class IOSkriver {
             // TODO: Her faa udskrevet flyets ordre eller handling
             printWriter.print(fly);
 
+            printWriter.println();
             fileWriter.close();
 
             // Retuner at det gik godt
@@ -60,7 +61,7 @@ public class IOSkriver {
             File file = new File("Data/"+filnavn);
 
             // Saetter append til false, saa vi ikke overskriver filen naar vi prover at skrive til den igen
-            FileWriter fileWriter = new FileWriter(file, false);
+            FileWriter fileWriter = new FileWriter(file, true);
             PrintWriter printWriter = new PrintWriter(fileWriter);
 
             // Udskriver Tidspunkt som det forste
@@ -76,6 +77,7 @@ public class IOSkriver {
             // TODO: Her faa udskrevet personalegruppens ordre eller handling
             printWriter.print(lufthavnspersonale);
 
+            printWriter.println();
             fileWriter.close();
 
             // Retuner at det gik godt
@@ -95,7 +97,7 @@ public class IOSkriver {
             File file = new File("Data/"+filnavn);
 
             // Saetter append til false, saa vi ikke overskriver filen naar vi prover at skrive til den igen
-            FileWriter fileWriter = new FileWriter(file, false);
+            FileWriter fileWriter = new FileWriter(file, true);
             PrintWriter printWriter = new PrintWriter(fileWriter);
 
             // Udskriver Tidspunkt som det forste
@@ -111,6 +113,7 @@ public class IOSkriver {
             // TODO: Her faa udskrevet personalegruppens ordre eller handling
             //printWriter.print();
 
+            printWriter.println();
             fileWriter.close();
 
             // Retuner at det gik godt

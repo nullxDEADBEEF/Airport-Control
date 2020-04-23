@@ -10,6 +10,8 @@ public class Fly {
     private boolean baggage;
     private boolean brændstof;
 
+    public Fly(){}
+
     public Fly(String aC, Standplads standplads, FlyRejse flyRejse, TaxiRute taxiRute, boolean passagerer, boolean baggage) {
         this.aC = aC;
         this.standplads = standplads;
