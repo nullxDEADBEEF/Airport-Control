@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d972b536-7430-498d-8fe8-b910bf66b687" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/com/nullxdeadbeef/FlyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/com/nullxdeadbeef/FlyTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nullxdeadbeef/Fly.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nullxdeadbeef/Fly.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nullxdeadbeef/Lufthavnspersonale/Lufthavnspersonale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nullxdeadbeef/Lufthavnspersonale/Lufthavnspersonale.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nullxdeadbeef/Standplads.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nullxdeadbeef/Standplads.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nullxdeadbeef/Terminal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nullxdeadbeef/Terminal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -280,10 +274,11 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1010" y="447" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587633369723" />
-    <state x="887" y="294" key="CommitChangelistDialog2" timestamp="1587635221831">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state x="706" y="227" key="CommitChangelistDialog2" timestamp="1587644026652">
+      <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="887" y="294" key="CommitChangelistDialog2/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587635221831" />
+    <state x="706" y="227" key="CommitChangelistDialog2/62.0.1858.1080@62.0.1858.1080" timestamp="1587644026652" />
     <state x="960" y="453" key="FileChooserDialogImpl" timestamp="1587548729553">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -317,10 +312,11 @@
     </state>
     <state x="721" y="266" width="1381" height="851" key="SettingsEditor/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587562369294" />
     <state x="585" y="205" width="1003" height="708" key="SettingsEditor/62.0.1858.1080@62.0.1858.1080" timestamp="1587559896188" />
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1587635241058">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state x="695" y="334" key="Vcs.Push.Dialog.v2" timestamp="1587641810089">
+      <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587635241058" />
+    <state x="695" y="334" key="Vcs.Push.Dialog.v2/62.0.1858.1080@62.0.1858.1080" timestamp="1587641810089" />
     <state x="984" y="593" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1587548290516">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -329,10 +325,11 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1051" y="418" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587632918229" />
-    <state x="982" y="491" key="git4idea.merge.GitPullDialog" timestamp="1587635229818">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state x="775" y="379" key="git4idea.merge.GitPullDialog" timestamp="1587643674018">
+      <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="982" y="491" key="git4idea.merge.GitPullDialog/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587635229818" />
+    <state x="775" y="379" key="git4idea.merge.GitPullDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1587643674018" />
     <state width="600" height="424" key="javadoc.popup" timestamp="1587540589642">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
