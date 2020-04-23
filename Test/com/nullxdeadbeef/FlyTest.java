@@ -18,7 +18,7 @@ class FlyTest {
         Standplads testStandplads = new Standplads(16, Standplads.Type.SMALL, false, 1000);
         Fly testFly = new Fly("73H", testStandplads, testFlyRejse, true, true);
         Pilot testPilot = new Pilot(testFly);
-
+//        Burde tage 2 minutter at køre 1000 meter med 30km/h
         assertEquals(2, testPilot.getFly().taxi());
     }
 }
