@@ -5,6 +5,8 @@ public class Standplads {
     private int standpladsNr;
     private Type type;
     private boolean ledig;
+/*    Ved at holde styr paa distancen mellem standplads og landingsbane sådan her
+    gør vi det super nemt at beregne tiden det tager at køre til og fra standpladser.*/
     private int meterTilLandingsbane;
 
     public enum Type {
