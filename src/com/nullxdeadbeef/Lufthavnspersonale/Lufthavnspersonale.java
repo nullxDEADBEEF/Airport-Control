@@ -11,10 +11,29 @@ public class Lufthavnspersonale extends Thread {
     private Standplads placering;
 
     public void run(){
+//        sendBesked(FORBIND_FLY <aC, flyrejse>)
+        sendBesked();
+//        modtagBesked(OK<forbind>)
+        String svarBesked = modtagBesked();
+//        sendBesked(OK<ok>)
+        sendBesked();
+        while (true){
+//            modtagBesked(ORDRE <gruppe>, <flag>)
+            String modtagetBesked = modtagBesked();
+//            sendBesked(OK <ordre:operationTid>)
+            sendBesked();
+//            modtagBesked(OK <ok>)
+            String svarBesked2 = modtagBesked();
+            if (svarBesked.equals("OK <ok>")){
+                break;
+            }
+        }
     }
 
     public void sendBesked() {}
-    public void modtagBesked() {}
+    public String modtagBesked() {
+        return null;
+    }
 
     public int getGruppeNr() {
         return gruppeNr;

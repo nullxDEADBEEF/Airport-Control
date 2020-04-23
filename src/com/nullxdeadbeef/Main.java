@@ -17,14 +17,7 @@ public class Main {
         // Test af Log funktionen
         IOSkriver ioSkriver = new IOSkriver();
 
-        ioSkriver.skrivTilFil(LocalDateTime.now());
-        ioSkriver.skrivTilFil(LocalDateTime.now());
-        ioSkriver.skrivTilFil(LocalDateTime.now());
-        ioSkriver.skrivTilFil(LocalDateTime.now());
-        ioSkriver.skrivTilFil(LocalDateTime.now());
-        ioSkriver.skrivTilFil(LocalDateTime.now());
-        ioSkriver.skrivTilFil(LocalDateTime.now());
-        ioSkriver.skrivTilFil(LocalDateTime.now());
+        //ioSkriver.skrivTilFil(LocalDateTime.now(), "tis");
 
 
     }
