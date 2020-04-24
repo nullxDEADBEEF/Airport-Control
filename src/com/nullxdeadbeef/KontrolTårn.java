@@ -1,5 +1,6 @@
 package com.nullxdeadbeef;
 
+import com.nullxdeadbeef.Log.IOSkriver;
 import com.nullxdeadbeef.Service.FlyDAO;
 
 import java.io.DataOutputStream;
@@ -19,6 +20,8 @@ public class KontrolTårn {
     private ArrayList<Fly> flyListe;
 //    Listen af alle de fly som på den givne dag ankommer, er skal blive klar til boarding
     private ArrayList<Fly> aktuelleFly;
+//    Nummer til at holde styr paa log besked nummer
+    private int num=1;
 //    Listen af alle de fly som har skabt forbindelse til kontroltårnet, ved brug af protokollen
     private ArrayList<Fly> forbundedeFly;
     private LocalDateTime tidspunkt;
@@ -78,7 +81,25 @@ public class KontrolTårn {
 
         return tidspunkt;
     }
+
+    public void printOgLogKommunikation(String besked){
+        IOSkriver ioSkriver = new IOSkriver();
+
+        // Gemmer beskeden i loggen
+        ioSkriver.skrivTilFil(tidspunkt.toLocalTime(), besked);
+
+        // Udskriver Den givne kommunikation formateret eksempel:
+        // [11:59:06] Log-1 Kontroltårn: DK1160 Modtaget besked om landing.
+
+        // TODO: Færdiggør print statementet - der mangler om det er kontroltårn, personale eller et fly som sender beskeden
+        System.out.println("["+tidspunkt.getHour()+":"+tidspunkt.getMinute()+":"+tidspunkt.getSecond()+"] "+
+                "Log-"+num+" "+"MANGLER HER"+": "+besked);
+
+        num++;
+    }
+
     public void printLog() {}
+
     public void sendTilAlle( String message ) {
         for ( Socket s : personaleSockets ) {
             try {
@@ -121,6 +142,7 @@ public class KontrolTårn {
         }
         return flyISimulation;
     }
+
     //tjekker om et fly fra aktuelleFly er indenfor en time af simuleringstidspunkt, og starter så
     // en ny pilotThread med flyet som parameter
     public void indenforKlokkeslaet(ArrayList<Fly> flyISimulation, LocalDateTime tidspunkt) {

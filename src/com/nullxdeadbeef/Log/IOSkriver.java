@@ -23,7 +23,7 @@ public class IOSkriver {
         try {
             File file = new File("Data/"+filnavn);
 
-            // Saetter append til false, saa vi ikke overskriver filen naar vi prover at skrive til den igen
+            // Saetter append til true, saa vi ikke overskriver filen naar vi prover at skrive til den igen
             FileWriter fileWriter = new FileWriter(file, true);
             PrintWriter printWriter = new PrintWriter(fileWriter);
 
@@ -54,11 +54,11 @@ public class IOSkriver {
     }
 
     // Hvis en personalegruppe skal skrive til en fil
-    public boolean skrivTilFil(Lufthavnspersonale lufthavnspersonale, LocalTime tidspunkt, String besked){
+    public boolean skrivTilFil(Lufthavnspersonale lhp, LocalTime tidspunkt, String besked){
         try {
             File file = new File("Data/"+filnavn);
 
-            // Saetter append til false, saa vi ikke overskriver filen naar vi prover at skrive til den igen
+            // Saetter append til true, saa vi ikke overskriver filen naar vi prover at skrive til den igen
             FileWriter fileWriter = new FileWriter(file, true);
             PrintWriter printWriter = new PrintWriter(fileWriter);
 
@@ -70,7 +70,7 @@ public class IOSkriver {
             num++;
 
             // Udskriver personalegruppen.
-            printWriter.print(lufthavnspersonale.getClass().getSimpleName()+": ");
+            printWriter.print(lhp.getClass().getSimpleName()+": ");
 
             // Skriver beskeden som er sendt over fra parameterne
             printWriter.println(besked);
@@ -93,7 +93,7 @@ public class IOSkriver {
         try {
             File file = new File("Data/"+filnavn);
 
-            // Saetter append til false, saa vi ikke overskriver filen naar vi prover at skrive til den igen
+            // Saetter append til true, saa vi ikke overskriver filen naar vi prover at skrive til den igen
             FileWriter fileWriter = new FileWriter(file, true);
             PrintWriter printWriter = new PrintWriter(fileWriter);
 
@@ -104,7 +104,7 @@ public class IOSkriver {
             printWriter.print("Log-"+num+" ");
             num++;
 
-            // Udskriver Kontroltaarn:.
+            // Udskriver Kontroltaarn:
             printWriter.print("Kontroltårn: ");
 
             // Skriver beskeden som er sendt over fra parameterne
