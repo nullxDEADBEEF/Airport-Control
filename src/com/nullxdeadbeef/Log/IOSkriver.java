@@ -2,7 +2,6 @@ package com.nullxdeadbeef.Log;
 
 import com.nullxdeadbeef.Fly;
 import com.nullxdeadbeef.Lufthavnspersonale.Lufthavnspersonale;
-
 import java.io.*;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
