@@ -1,6 +1,7 @@
 package com.nullxdeadbeef.Log;
 
 import com.nullxdeadbeef.Fly;
+import com.nullxdeadbeef.FlyRejse;
 import com.nullxdeadbeef.Lufthavnspersonale.Lufthavnspersonale;
 import java.io.*;
 import java.time.LocalDateTime;
@@ -19,7 +20,7 @@ public class IOSkriver {
     String filnavn = "Log-"+date+".txt";
 
     // Hvis et fly skal skrive til fil
-    public boolean skrivTilFil(Fly fly, LocalTime tidspunkt, String besked) {
+    public boolean skrivTilFil(FlyRejse flyRejse, LocalTime tidspunkt, String besked) {
         try {
             File file = new File("Data/"+filnavn);
 
@@ -35,7 +36,7 @@ public class IOSkriver {
             num++;
 
             // Udskriver flyets rutenr.
-            printWriter.print("Fly "+fly.getFlyRejse().getRuteNr()+": ");
+            printWriter.print("Fly "+flyRejse.getRuteNr()+": ");
 
             // Skriver beskeden som er sendt over fra parameterne
             printWriter.println(besked);
