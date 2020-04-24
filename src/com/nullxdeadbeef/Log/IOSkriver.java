@@ -1,6 +1,7 @@
 package com.nullxdeadbeef.Log;
 
 import com.nullxdeadbeef.Fly;
+import com.nullxdeadbeef.FlyRejse;
 import com.nullxdeadbeef.Lufthavnspersonale.Lufthavnspersonale;
 import java.io.*;
 import java.time.LocalDateTime;
@@ -19,11 +20,11 @@ public class IOSkriver {
     String filnavn = "Log-"+date+".txt";
 
     // Hvis et fly skal skrive til fil
-    public boolean skrivTilFil(Fly fly, LocalTime tidspunkt, String besked) {
+    public boolean skrivTilFil(FlyRejse flyRejse, LocalTime tidspunkt, String besked) {
         try {
             File file = new File("Data/"+filnavn);
 
-            // Saetter append til false, saa vi ikke overskriver filen naar vi prover at skrive til den igen
+            // Saetter append til true, saa vi ikke overskriver filen naar vi prover at skrive til den igen
             FileWriter fileWriter = new FileWriter(file, true);
             PrintWriter printWriter = new PrintWriter(fileWriter);
 
@@ -35,7 +36,7 @@ public class IOSkriver {
             num++;
 
             // Udskriver flyets rutenr.
-            printWriter.print("Fly "+fly.getFlyRejse().getRuteNr()+": ");
+            printWriter.print("Fly "+flyRejse.getRuteNr()+": ");
 
             // Skriver beskeden som er sendt over fra parameterne
             printWriter.println(besked);
@@ -54,11 +55,11 @@ public class IOSkriver {
     }
 
     // Hvis en personalegruppe skal skrive til en fil
-    public boolean skrivTilFil(Lufthavnspersonale lufthavnspersonale, LocalTime tidspunkt, String besked){
+    public boolean skrivTilFil(Lufthavnspersonale lhp, LocalTime tidspunkt, String besked){
         try {
             File file = new File("Data/"+filnavn);
 
-            // Saetter append til false, saa vi ikke overskriver filen naar vi prover at skrive til den igen
+            // Saetter append til true, saa vi ikke overskriver filen naar vi prover at skrive til den igen
             FileWriter fileWriter = new FileWriter(file, true);
             PrintWriter printWriter = new PrintWriter(fileWriter);
 
@@ -70,7 +71,7 @@ public class IOSkriver {
             num++;
 
             // Udskriver personalegruppen.
-            printWriter.print(lufthavnspersonale.getClass().getSimpleName()+": ");
+            printWriter.print(lhp.getClass().getSimpleName()+": ");
 
             // Skriver beskeden som er sendt over fra parameterne
             printWriter.println(besked);
@@ -93,7 +94,7 @@ public class IOSkriver {
         try {
             File file = new File("Data/"+filnavn);
 
-            // Saetter append til false, saa vi ikke overskriver filen naar vi prover at skrive til den igen
+            // Saetter append til true, saa vi ikke overskriver filen naar vi prover at skrive til den igen
             FileWriter fileWriter = new FileWriter(file, true);
             PrintWriter printWriter = new PrintWriter(fileWriter);
 
@@ -104,7 +105,7 @@ public class IOSkriver {
             printWriter.print("Log-"+num+" ");
             num++;
 
-            // Udskriver Kontroltaarn:.
+            // Udskriver Kontroltaarn:
             printWriter.print("Kontroltårn: ");
 
             // Skriver beskeden som er sendt over fra parameterne
