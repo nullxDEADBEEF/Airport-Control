@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d972b536-7430-498d-8fe8-b910bf66b687" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nullxdeadbeef/KontrolTårn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nullxdeadbeef/KontrolTårn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nullxdeadbeef/PilotThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nullxdeadbeef/PilotThread.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -289,7 +287,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587643953594</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Aendret fly til flyrejse i IOSkriver">
+      <created>1587718734808</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1587718734809</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -307,7 +312,8 @@
     <MESSAGE value="comments" />
     <MESSAGE value="Commit to pull" />
     <MESSAGE value="Merge branch 'master' of https://github.com/nullxDEADBEEF/Airport-Control&#10;&#10; Conflicts:&#10;&#9;.idea/workspace.xml&#10;&#9;out/production/airport-control/META-INF/airport-control.kotlin_module&#10;&#9;out/production/airport-control/com/nullxdeadbeef/FlyRejse.class&#10;&#9;out/production/airport-control/com/nullxdeadbeef/KontrolTårn.class&#10;&#9;out/production/airport-control/com/nullxdeadbeef/Lufthavnspersonale/Lufthavnspersonale.class&#10;&#9;out/production/airport-control/com/nullxdeadbeef/Lufthavnspersonale/Pilot.class&#10;&#9;out/production/airport-control/com/nullxdeadbeef/Main.class&#10;&#9;out/production/airport-control/com/nullxdeadbeef/Standplads$Type.class&#10;&#9;out/production/airport-control/com/nullxdeadbeef/Standplads.class&#10;&#9;out/production/airport-control/com/nullxdeadbeef/Terminal.class&#10;&#9;out/test/airport-control/com/nullxdeadbeef/FlyTest.class&#10;&#9;out/test/airport-control/com/nullxdeadbeef/KontrolTårnTest.class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of https://github.com/nullxDEADBEEF/Airport-Control&#10;&#10; Conflicts:&#10;&#9;.idea/workspace.xml&#10;&#9;out/production/airport-control/META-INF/airport-control.kotlin_module&#10;&#9;out/production/airport-control/com/nullxdeadbeef/FlyRejse.class&#10;&#9;out/production/airport-control/com/nullxdeadbeef/KontrolTårn.class&#10;&#9;out/production/airport-control/com/nullxdeadbeef/Lufthavnspersonale/Lufthavnspersonale.class&#10;&#9;out/production/airport-control/com/nullxdeadbeef/Lufthavnspersonale/Pilot.class&#10;&#9;out/production/airport-control/com/nullxdeadbeef/Main.class&#10;&#9;out/production/airport-control/com/nullxdeadbeef/Standplads$Type.class&#10;&#9;out/production/airport-control/com/nullxdeadbeef/Standplads.class&#10;&#9;out/production/airport-control/com/nullxdeadbeef/Terminal.class&#10;&#9;out/test/airport-control/com/nullxdeadbeef/FlyTest.class&#10;&#9;out/test/airport-control/com/nullxdeadbeef/KontrolTårnTest.class" />
+    <MESSAGE value="Aendret fly til flyrejse i IOSkriver" />
+    <option name="LAST_COMMIT_MESSAGE" value="Aendret fly til flyrejse i IOSkriver" />
   </component>
   <component name="WindowStateProjectService">
     <state x="877" y="350" key="#KontrolTårnTest.startSimulering" timestamp="1587558245631">
@@ -337,10 +343,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1010" y="447" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587633369723" />
-    <state x="887" y="289" key="CommitChangelistDialog2" timestamp="1587717345697">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state x="665" y="0" key="CommitChangelistDialog2" timestamp="1587718733937">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="665" y="218" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587645715565" />
+    <state x="665" y="0" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587718733937" />
     <state x="887" y="289" key="CommitChangelistDialog2/0.0.2560.1400/-1080.-134.1080.1920/2560.-505.2560.1440@0.0.2560.1400" timestamp="1587646661784" />
     <state x="887" y="289" key="CommitChangelistDialog2/0.0.2560.1400/2560.-505.2560.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587717345697" />
     <state x="887" y="294" key="CommitChangelistDialog2/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587636595950" />
@@ -383,10 +389,10 @@
     </state>
     <state x="721" y="266" width="1381" height="851" key="SettingsEditor/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587562369294" />
     <state x="585" y="205" width="1003" height="708" key="SettingsEditor/62.0.1858.1080@62.0.1858.1080" timestamp="1587717781621" />
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1587646673106">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state x="654" y="322" key="Vcs.Push.Dialog.v2" timestamp="1587718742416">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="654" y="322" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587643435286" />
+    <state x="654" y="322" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587718742416" />
     <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400/-1080.-134.1080.1920/2560.-505.2560.1440@0.0.2560.1400" timestamp="1587646673106" />
     <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587636605395" />
     <state x="984" y="593" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1587548290516">
@@ -397,10 +403,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1051" y="418" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587632918229" />
-    <state x="982" y="491" key="git4idea.merge.GitPullDialog" timestamp="1587716544102">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state x="737" y="365" key="git4idea.merge.GitPullDialog" timestamp="1587719253102">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="737" y="365" key="git4idea.merge.GitPullDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587643956779" />
+    <state x="737" y="365" key="git4idea.merge.GitPullDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587719253102" />
     <state x="982" y="491" key="git4idea.merge.GitPullDialog/0.0.2560.1400/-1080.-134.1080.1920/2560.-505.2560.1440@0.0.2560.1400" timestamp="1587646665987" />
     <state x="982" y="491" key="git4idea.merge.GitPullDialog/0.0.2560.1400/2560.-505.2560.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587716544102" />
     <state x="982" y="491" key="git4idea.merge.GitPullDialog/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587640735071" />
