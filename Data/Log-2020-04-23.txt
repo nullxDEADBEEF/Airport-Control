@@ -1,1 +1,4 @@
 [0:10:0] Log-1 Pilot: Dette er en besked til hanne
+[11:22:10] Log-1 Pilot: Dette er en besked til Hanne
+[11:22:10] Log-1 Pilot: Dette er en besked til Hanne
+[11:22:10] Log-1 Pilot: Dette er en besked til Hanne
