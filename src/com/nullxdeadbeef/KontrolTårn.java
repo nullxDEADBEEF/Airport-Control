@@ -2,10 +2,12 @@ package com.nullxdeadbeef;
 
 import com.nullxdeadbeef.Log.IOSkriver;
 import com.nullxdeadbeef.Service.FlyDAO;
+import com.nullxdeadbeef.Service.FlyRejseDAO;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
+import java.lang.reflect.Array;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.time.LocalDate;
@@ -13,7 +15,9 @@ import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.util.*;
 
-public class KontrolTårn extends Thread {
+import static com.nullxdeadbeef.Service.FlyRejseDAO.selectAll;
+
+public class KontrolTårn {
     private static final int PORT = 42069;
 //    Listen af alle fly, hentet fra databasen
     private ArrayList<FlyRejse> flyRejseListe;
@@ -42,12 +46,10 @@ public class KontrolTårn extends Thread {
 
         while (true) {
             try {
-                kontrolTårn.startSimulering( LocalDateTime.parse( "2019-09-19T00:00:00" ));
                 clientSocket = server.accept();
-                kontrolTaarnSocket = server.accept();
+                kontrolTaarnSocket = clientSocket;
                 personaleSockets.add( clientSocket );
-                Thread kontrolTaarnT = new KontrolTårn();
-                kontrolTaarnT.start();
+                kontrolTårn.startSimulering( LocalDateTime.parse( "2019-09-19T00:00:00" ));
             } catch ( IOException ex ) {
                 ex.printStackTrace();
                 System.exit( 1 );
@@ -81,21 +83,11 @@ public class KontrolTårn extends Thread {
         }
     }
     public LocalDateTime simulering() {
-        Standplads testStandplads = new Standplads(16, Standplads.Type.SMALL, false, 1000);
-        Fly testFly = new Fly("73H", testStandplads, true, true);
-        FlyRejse testFlyRejse =
-                new FlyRejse(LocalDate.parse("2019-09-19"), true, "D8 3563",
-                        LocalTime.of(00, 10), "KRK", testFly);
-
 //        Simuleringskode her
         boolean running = true;
         while ( true ) {
-            ArrayList<FlyRejse> aktuelleFly = new ArrayList<>();
-                    aktuelleFly.add( testFlyRejse );
-            // TODO: uncomment when data has been inserted
-            //ArrayList<FlyRejse> aktuelleFly =
-           //         getAktuelleFlyRejser( flyRejseListe,
-           //         tidspunkt );
+            ArrayList<FlyRejse> aktuelleFly = getAktuelleFlyRejser( flyRejseListe,
+                    tidspunkt );
             indenforKlokkeslaet(aktuelleFly, tidspunkt);
             inkrementerTidspunkt();
 
@@ -108,8 +100,16 @@ public class KontrolTårn extends Thread {
         return tidspunkt;
     }
 
+/*
     public void printOgLogKommunikation(String besked){
+
         IOSkriver ioSkriver = new IOSkriver();
+        ArrayList<FlyRejse> testArrayMedData = FlyRejseDAO.selectAll();
+
+        for (FlyRejse flyRejse : testArrayMedData){
+            ioSkriver.skrivTilFil(flyRejse, flyRejse.getKlokkeslæt(), besked);
+        }
+
 
         // Gemmer beskeden i loggen
         ioSkriver.skrivTilFil(tidspunkt.toLocalTime(), besked);
@@ -123,6 +123,7 @@ public class KontrolTårn extends Thread {
 
         num++;
     }
+*/
 
     public void printLog() {}
 

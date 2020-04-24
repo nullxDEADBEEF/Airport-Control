@@ -71,4 +71,16 @@ public class FlyRejse {
     public void setFly(Fly fly) {
         this.fly = fly;
     }
+
+    @Override
+    public String toString() {
+        return "FlyRejse{" +
+                "dato=" + dato +
+                ", ankomst=" + ankomst +
+                ", ruteNr='" + ruteNr + '\'' +
+                ", klokkeslæt=" + klokkeslæt +
+                ", origin_destination='" + origin_destination + '\'' +
+                ", fly=" + fly +
+                '}';
+    }
 }
