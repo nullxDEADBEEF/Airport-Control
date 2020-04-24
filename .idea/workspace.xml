@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d972b536-7430-498d-8fe8-b910bf66b687" name="Default Changelist" comment="Added IOTest">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/Log-2020-04-23.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Log-2020-04-23.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/com/nullxdeadbeef/IOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/com/nullxdeadbeef/IOTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/com/nullxdeadbeef/KontrolTårnTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/com/nullxdeadbeef/KontrolTårnTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/Log/IOSkriver.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/Log/IOSkriver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/airport-control/com/nullxdeadbeef/KontrolTårnTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/airport-control/com/nullxdeadbeef/KontrolTårnTest.class" afterDir="false" />
-    </list>
+    <list default="true" id="d972b536-7430-498d-8fe8-b910bf66b687" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -230,7 +223,7 @@
       <workItem from="1587540073578" duration="725000" />
       <workItem from="1587541144538" duration="3259000" />
       <workItem from="1587623898180" duration="12455000" />
-      <workItem from="1587710796365" duration="1180000" />
+      <workItem from="1587710796365" duration="1751000" />
     </task>
     <task id="LOCAL-00001" summary="fly og flyrejse">
       <created>1587548954547</created>
@@ -316,7 +309,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587645741347</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Added IOTest">
+      <created>1587712511892</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1587712511892</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -367,12 +367,16 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1010" y="447" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587633369723" />
-    <state x="680" y="211" key="CommitChangelistDialog2" timestamp="1587711986534">
+    <state x="680" y="211" key="CommitChangelistDialog2" timestamp="1587712510861">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="680" y="211" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587711986534" />
+    <state x="680" y="211" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587712510861" />
     <state x="887" y="294" key="CommitChangelistDialog2/0.0.2560.1400/-1080.-134.1080.1920/2560.-505.2560.1440@0.0.2560.1400" timestamp="1587643129791" />
     <state x="887" y="294" key="CommitChangelistDialog2/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587636595950" />
+    <state x="302" y="171" key="DiffContextDialog" timestamp="1587712505989">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="302" y="171" key="DiffContextDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587712505989" />
     <state x="960" y="453" key="FileChooserDialogImpl" timestamp="1587548729553">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -442,10 +446,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1051" y="418" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587632918229" />
-    <state x="737" y="365" key="git4idea.merge.GitPullDialog" timestamp="1587710854677">
+    <state x="737" y="365" key="git4idea.merge.GitPullDialog" timestamp="1587712536237">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="737" y="365" key="git4idea.merge.GitPullDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587710854677" />
+    <state x="737" y="365" key="git4idea.merge.GitPullDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587712536237" />
     <state x="982" y="491" key="git4idea.merge.GitPullDialog/0.0.2560.1400/-1080.-134.1080.1920/2560.-505.2560.1440@0.0.2560.1400" timestamp="1587643135271" />
     <state x="982" y="491" key="git4idea.merge.GitPullDialog/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587640735071" />
     <state width="600" height="424" key="javadoc.popup" timestamp="1587540589642">
