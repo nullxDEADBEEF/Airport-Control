@@ -130,6 +130,8 @@ public class KontrolTårn {
                 if (fly.getFlyRejse().getKlokkeslæt() == tidspunktTime.minusHours(1)) {
                     Thread pilotThread = new Pilot(fly);
                     pilotThread.start();
+                } else if (fly.getFlyRejse().getKlokkeslæt() != tidspunktTime.minusHours(1)) {
+                    break;
                 }
             }
         }
