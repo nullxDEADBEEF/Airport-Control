@@ -28,24 +28,19 @@ public class PilotThread extends Thread {
     public void run() {
         try {
             socket = new Socket( host, port );
-            sendBesked( "FORBIND_FLY " + flyRejse.getFly().getaC() + ", " + flyRejse.getRuteNr() );
-            modtagBesked();
         } catch ( IOException ex ) {
             ex.printStackTrace();
             System.exit( 1 );
-        } finally {
-            try {
-                socket.close();
-            } catch ( IOException ex ) {
-                ex.printStackTrace();
-                System.exit( 1 );
-            }
         }
 
+        while ( true ) {
+                sendBesked( "FORBIND_FLY " + flyRejse.getFly().getaC() + ", " + flyRejse.getRuteNr(), socket );
+                modtagBesked( socket );
+        }
     }
 
     // TODO: husk at logge beskeden
-    public void sendBesked( String besked ) {
+    public void sendBesked( String besked, Socket socket ) {
         try {
             DataOutputStream outputStream =
                     new DataOutputStream( socket.getOutputStream() );
@@ -58,7 +53,7 @@ public class PilotThread extends Thread {
     }
 
     // TODO: husk at logge beskeden
-    public void modtagBesked() {
+    public void modtagBesked( Socket socket ) {
         try {
             DataInputStream inputStream =
                     new DataInputStream( socket.getInputStream() );

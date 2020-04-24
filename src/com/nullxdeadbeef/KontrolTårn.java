@@ -13,7 +13,7 @@ import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.util.*;
 
-public class KontrolTårn {
+public class KontrolTårn extends Thread {
     private static final int PORT = 42069;
 //    Listen af alle fly, hentet fra databasen
     private ArrayList<FlyRejse> flyRejseListe;
@@ -42,10 +42,12 @@ public class KontrolTårn {
 
         while (true) {
             try {
-                clientSocket = server.accept();
-                kontrolTaarnSocket = clientSocket;
-                personaleSockets.add( clientSocket );
                 kontrolTårn.startSimulering( LocalDateTime.parse( "2019-09-19T00:00:00" ));
+                clientSocket = server.accept();
+                kontrolTaarnSocket = server.accept();
+                personaleSockets.add( clientSocket );
+                Thread kontrolTaarnT = new KontrolTårn();
+                kontrolTaarnT.start();
             } catch ( IOException ex ) {
                 ex.printStackTrace();
                 System.exit( 1 );
@@ -79,11 +81,21 @@ public class KontrolTårn {
         }
     }
     public LocalDateTime simulering() {
+        Standplads testStandplads = new Standplads(16, Standplads.Type.SMALL, false, 1000);
+        Fly testFly = new Fly("73H", testStandplads, true, true);
+        FlyRejse testFlyRejse =
+                new FlyRejse(LocalDate.parse("2019-09-19"), true, "D8 3563",
+                        LocalTime.of(00, 10), "KRK", testFly);
+
 //        Simuleringskode her
         boolean running = true;
         while ( true ) {
-            ArrayList<FlyRejse> aktuelleFly = getAktuelleFlyRejser( flyRejseListe,
-                    tidspunkt );
+            ArrayList<FlyRejse> aktuelleFly = new ArrayList<>();
+                    aktuelleFly.add( testFlyRejse );
+            // TODO: uncomment when data has been inserted
+            //ArrayList<FlyRejse> aktuelleFly =
+           //         getAktuelleFlyRejser( flyRejseListe,
+           //         tidspunkt );
             indenforKlokkeslaet(aktuelleFly, tidspunkt);
             inkrementerTidspunkt();
 
