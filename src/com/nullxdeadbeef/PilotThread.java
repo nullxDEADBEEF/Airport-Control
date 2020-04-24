@@ -3,23 +3,48 @@ package com.nullxdeadbeef;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
+import java.net.InetAddress;
 import java.net.Socket;
+import java.net.UnknownHostException;
 
-public class Pilot extends Thread {
-    private Fly fly;
+public class PilotThread extends Thread {
+    private FlyRejse flyRejse;
     private Socket socket;
+    private InetAddress host;
+    private int port;
 
-    public Pilot(Fly fly) {
-        this.fly = fly;
+    public PilotThread( FlyRejse flyRejse ) {
+        this.flyRejse = flyRejse;
+        this.port = 42069;
+        try {
+            host = InetAddress.getLocalHost();
+        } catch ( UnknownHostException ex ) {
+            ex.printStackTrace();
+            System.exit( 1 );
+        }
     }
 
     @Override
     public void run() {
-        sendBesked( "FORBIND_FLY " + fly.getaC() + ", " + fly.getFlyRejse().getRuteNr() );
-        modtagBesked();
+        try {
+            socket = new Socket( host, port );
+            sendBesked( "FORBIND_FLY " + flyRejse.getFly().getaC() + ", " + flyRejse.getRuteNr() );
+            modtagBesked();
+        } catch ( IOException ex ) {
+            ex.printStackTrace();
+            System.exit( 1 );
+        } finally {
+            try {
+                socket.close();
+            } catch ( IOException ex ) {
+                ex.printStackTrace();
+                System.exit( 1 );
+            }
+        }
 
     }
 
+    // TODO: husk at logge beskeden
     public void sendBesked( String besked ) {
         try {
             DataOutputStream outputStream =
@@ -31,6 +56,8 @@ public class Pilot extends Thread {
         }
 
     }
+
+    // TODO: husk at logge beskeden
     public void modtagBesked() {
         try {
             DataInputStream inputStream =
@@ -48,12 +75,12 @@ public class Pilot extends Thread {
 
     public void mayday() {}
 
-    public Fly getFly() {
-        return fly;
+    public FlyRejse getFly() {
+        return flyRejse;
     }
 
-    public void setFly( Fly fly ) {
-        this.fly = fly;
+    public void setFly( FlyRejse flyRejse ) {
+        this.flyRejse = flyRejse;
     }
 
     public Socket getSocket() {

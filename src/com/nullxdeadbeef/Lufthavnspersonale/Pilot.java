@@ -1,23 +1,23 @@
 package com.nullxdeadbeef.Lufthavnspersonale;
 
-import com.nullxdeadbeef.Fly;
+import com.nullxdeadbeef.FlyRejse;
 
 public class Pilot extends Lufthavnspersonale {
-    private Fly fly;
+    private FlyRejse flyRejse;
 
-    public Pilot(Fly fly) {
-        this.fly = fly;
+    public Pilot(FlyRejse flyRejse) {
+        this.flyRejse = flyRejse;
 //        Operationstiden for en pilot er tiden det tager at taxie til eller fra standpladsen.
-        setOperationTid(fly.taxi());
+        setOperationTid(flyRejse.getFly().taxi());
     }
 
     public void mayday() {}
 
-    public Fly getFly() {
-        return fly;
+    public FlyRejse getFlyRejse() {
+        return flyRejse;
     }
 
-    public void setFly(Fly fly) {
-        this.fly = fly;
+    public void setFlyRejse(FlyRejse flyRejse) {
+        this.flyRejse = flyRejse;
     }
 }
