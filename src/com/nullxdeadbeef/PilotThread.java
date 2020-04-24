@@ -8,13 +8,13 @@ import java.net.Socket;
 import java.net.UnknownHostException;
 
 public class PilotThread extends Thread {
-    private Fly fly;
+    private FlyRejse flyRejse;
     private Socket socket;
     private InetAddress host;
     private int port;
 
-    public PilotThread( Fly fly ) {
-        this.fly = fly;
+    public PilotThread( FlyRejse flyRejse ) {
+        this.flyRejse = flyRejse;
         this.port = 42069;
         try {
             host = InetAddress.getLocalHost();
@@ -28,7 +28,7 @@ public class PilotThread extends Thread {
     public void run() {
         try {
             socket = new Socket( host, port );
-            sendBesked( "FORBIND_FLY " + fly.getaC() + ", " + fly.getFlyRejse().getRuteNr() );
+            sendBesked( "FORBIND_FLY " + flyRejse.getFly().getaC() + ", " + flyRejse.getRuteNr() );
             modtagBesked();
         } catch ( IOException ex ) {
             ex.printStackTrace();
@@ -75,12 +75,12 @@ public class PilotThread extends Thread {
 
     public void mayday() {}
 
-    public Fly getFly() {
-        return fly;
+    public FlyRejse getFly() {
+        return flyRejse;
     }
 
-    public void setFly( Fly fly ) {
-        this.fly = fly;
+    public void setFly( FlyRejse flyRejse ) {
+        this.flyRejse = flyRejse;
     }
 
     public Socket getSocket() {
