@@ -2,9 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d972b536-7430-498d-8fe8-b910bf66b687" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nullxdeadbeef/KontrolTårn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nullxdeadbeef/KontrolTårn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nullxdeadbeef/PilotThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nullxdeadbeef/PilotThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/com/nullxdeadbeef/KontrolTårnTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/com/nullxdeadbeef/KontrolTårnTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/KontrolTårn.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/KontrolTårn.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/PilotThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/PilotThread.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/Service/DatabaseAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/Service/DatabaseAdapter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/Service/FlyRejseDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/Service/FlyRejseDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/airport-control/com/nullxdeadbeef/KontrolTårnTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/airport-control/com/nullxdeadbeef/KontrolTårnTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nullxdeadbeef/Service/DatabaseAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nullxdeadbeef/Service/DatabaseAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nullxdeadbeef/Service/FlyRejseDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nullxdeadbeef/Service/FlyRejseDAO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +96,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="project.structure.side.proportion" value="0.25179" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
@@ -101,13 +108,29 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.IOTest.ioTest">
+  <component name="RunManager" selected="JUnit.FlyRejseDAOTest.selectAll">
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.nullxdeadbeef.Main" />
       <module name="airport-control" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FlyRejseDAOTest.selectAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="airport-control" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nullxdeadbeef.Service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.nullxdeadbeef.Service" />
+      <option name="MAIN_CLASS_NAME" value="com.nullxdeadbeef.Service.FlyRejseDAOTest" />
+      <option name="METHOD_NAME" value="selectAll" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -178,6 +201,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FlyRejseDAOTest.selectAll" />
         <item itemvalue="JUnit.IOTest.ioTest" />
         <item itemvalue="JUnit.FlyTest.taxi" />
         <item itemvalue="JUnit.KontrolTårnTest.inkrementerTidspunkt" />
@@ -348,25 +372,29 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="960" y="453" key="FileChooserDialogImpl/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587548729553" />
-    <state width="1877" height="267" key="GridCell.Tab.0.bottom" timestamp="1587645332408">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="2517" height="309" key="GridCell.Tab.0.bottom" timestamp="1587719737740">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1877" height="267" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587645332408" />
+    <state width="2517" height="309" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.-505.2560.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587719737740" />
     <state width="2517" height="211" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587635173497" />
-    <state width="1877" height="267" key="GridCell.Tab.0.center" timestamp="1587645332408">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="2517" height="309" key="GridCell.Tab.0.center" timestamp="1587719737740">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1877" height="267" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587645332408" />
+    <state width="2517" height="309" key="GridCell.Tab.0.center/0.0.2560.1400/2560.-505.2560.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587719737740" />
     <state width="2517" height="211" key="GridCell.Tab.0.center/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587635173497" />
-    <state width="1877" height="267" key="GridCell.Tab.0.left" timestamp="1587645332408">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="2517" height="309" key="GridCell.Tab.0.left" timestamp="1587719737740">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1877" height="267" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587645332408" />
+    <state width="2517" height="309" key="GridCell.Tab.0.left/0.0.2560.1400/2560.-505.2560.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587719737740" />
     <state width="2517" height="211" key="GridCell.Tab.0.left/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587635173497" />
-    <state width="1877" height="267" key="GridCell.Tab.0.right" timestamp="1587645332408">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="2517" height="309" key="GridCell.Tab.0.right" timestamp="1587719737740">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1877" height="267" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587645332408" />
+    <state width="2517" height="309" key="GridCell.Tab.0.right/0.0.2560.1400/2560.-505.2560.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587719737740" />
     <state width="2517" height="211" key="GridCell.Tab.0.right/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587635173497" />
     <state x="197" y="101" key="MergeDialog" timestamp="1587643979302">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -378,9 +406,10 @@
     </state>
     <state x="526" y="245" key="MultipleFileMergeDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587643982938" />
     <state x="992" y="416" key="MultipleFileMergeDialog/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587633801983" />
-    <state x="585" y="205" width="1003" height="708" key="SettingsEditor" timestamp="1587717781621">
-      <screen x="62" y="0" width="1858" height="1080" />
+    <state x="721" y="266" width="1003" height="708" key="SettingsEditor" timestamp="1587718416200">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
+    <state x="721" y="266" key="SettingsEditor/0.0.2560.1400/2560.-505.2560.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587718416200" />
     <state x="721" y="266" width="1381" height="851" key="SettingsEditor/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587562369294" />
     <state x="585" y="205" width="1003" height="708" key="SettingsEditor/62.0.1858.1080@62.0.1858.1080" timestamp="1587717781621" />
     <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1587646673106">

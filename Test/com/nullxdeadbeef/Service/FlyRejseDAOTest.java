@@ -11,12 +11,9 @@ class FlyRejseDAOTest {
 
     @Test
     void selectAll() {
-        ArrayList<FlyRejse> alleRejser = new ArrayList<>();
-        alleRejser.addAll(FlyRejseDAO.selectAll());
-
         for (FlyRejse flyrejse :
-                alleRejser) {
-            flyrejse.toString();
+                FlyRejseDAO.selectAll()) {
+            System.out.println(flyrejse.toString());
         }
     }
 }

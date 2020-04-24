@@ -9,6 +9,7 @@ import java.sql.ResultSet;
 import java.sql.Time;
 import java.time.LocalDate;
 import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 
 public class FlyRejseDAO {
@@ -64,15 +65,17 @@ public class FlyRejseDAO {
 
             while (rs.next()) {
                 FlyRejse flyRejse = new FlyRejse();
-                flyRejse.setDato(LocalDate.parse(rs.getString("dato")));
+                DateTimeFormatter formatter = DateTimeFormatter.ofPattern("M/dd/uuuu");
+                flyRejse.setDato(LocalDate.parse(rs.getString("dato"), formatter));
                 if (rs.getString("ankomst_afgang").equals("A")){
                     flyRejse.setAnkomst(true);
                 } else{
                     flyRejse.setAnkomst(false);
                 }
                 flyRejse.setRuteNr(rs.getString("rutenr"));
-                flyRejse.setKlokkeslæt(LocalTime.parse(rs.getString("klokkeslæt")));
-                flyRejse.setOrigin_destination(rs.getString("origin/destination"));
+                DateTimeFormatter timeFormatter = DateTimeFormatter.ofPattern("k:mm");
+                flyRejse.setKlokkeslæt(LocalTime.parse(rs.getString("klokkeslæt"), timeFormatter));
+                flyRejse.setOrigin_destination(rs.getString("origin_destination"));
                 Fly fly = new Fly();
                 fly.setaC(rs.getString("aC"));
                 flyRejse.setFly(fly);
@@ -81,7 +84,7 @@ public class FlyRejseDAO {
         } catch (Exception e) {
             System.out.println("Error: " + e);
             e.printStackTrace();
-        } return flyRejser;
-
+        }
+        return flyRejser;
     }
 }
