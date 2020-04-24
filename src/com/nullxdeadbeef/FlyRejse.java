@@ -14,12 +14,14 @@ public class FlyRejse {
     public FlyRejse() {
     }
 
-    public FlyRejse(LocalDate dato, Boolean ankomst, String ruteNr, LocalTime klokkeslæt, String origin_destination) {
+    public FlyRejse(LocalDate dato, Boolean ankomst, String ruteNr,
+                    LocalTime klokkeslæt, String origin_destination, Fly fly) {
         this.dato = dato;
         this.ankomst = ankomst;
         this.ruteNr = ruteNr;
         this.klokkeslæt = klokkeslæt;
         this.origin_destination = origin_destination;
+        this.fly = fly;
     }
 
     public LocalDate getDato() {
