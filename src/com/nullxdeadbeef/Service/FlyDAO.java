@@ -26,7 +26,7 @@ public class FlyDAO {
                 Fly fly = new Fly();
                 fly.setaC(rs.getString("A/C"));
                 //fly.setStandplads(rs.getInt("id_booths"));
-                //fly.setFlyRejse(rs.getInt("id_flights"));
+//                fly.setFlyRejse(rs.getInt("id_flights"));
                 alleFly.add(fly);
 
             }

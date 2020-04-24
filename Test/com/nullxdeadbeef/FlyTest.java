@@ -23,6 +23,5 @@ class FlyTest {
 //        Burde tage 2 minutter at køre 1000 meter med 30km/h
 
         assertEquals(2, testPilot.getFly().taxi());
-
     }
 }

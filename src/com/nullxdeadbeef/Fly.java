@@ -3,7 +3,6 @@ package com.nullxdeadbeef;
 public class Fly {
     private String aC;
     private Standplads standplads;
-    private FlyRejse flyRejse;
     private Status status;
     private boolean passagerer;
     private boolean baggage;
@@ -13,10 +12,9 @@ public class Fly {
     public Fly() {
     }
 
-    public Fly(String aC, Standplads standplads, FlyRejse flyRejse, boolean passagerer, boolean baggage) {
+    public Fly(String aC, Standplads standplads, boolean passagerer, boolean baggage) {
         this.aC = aC;
         this.standplads = standplads;
-        this.flyRejse = flyRejse;
         this.passagerer = passagerer;
         this.baggage = baggage;
 //        Fly mangler altid brændstof
@@ -51,15 +49,6 @@ public class Fly {
     public void setStandplads(Standplads standplads) {
         this.standplads = standplads;
     }
-
-    public FlyRejse getFlyRejse() {
-        return flyRejse;
-    }
-
-    public void setFlyRejse(FlyRejse flyRejse) {
-        this.flyRejse = flyRejse;
-    }
-
 
     public Status getStatus() {
         return status;

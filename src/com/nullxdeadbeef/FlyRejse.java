@@ -9,6 +9,7 @@ public class FlyRejse {
     private String ruteNr;
     private LocalTime klokkeslæt;
     private String origin_destination;
+    private Fly fly;
 
     public FlyRejse() {
     }
@@ -59,5 +60,13 @@ public class FlyRejse {
 
     public void setOrigin_destination(String origin_destination) {
         this.origin_destination = origin_destination;
+    }
+
+    public Fly getFly() {
+        return fly;
+    }
+
+    public void setFly(Fly fly) {
+        this.fly = fly;
     }
 }

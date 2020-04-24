@@ -16,7 +16,6 @@ public class DatabaseAdapter {
     final static String url = "jdbc:mysql://localhost:1337/airport?useUnicode" +
             "=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
 
-
     public static Connection getConnection() {
         try {
             con = DriverManager.getConnection(url, username, password);
