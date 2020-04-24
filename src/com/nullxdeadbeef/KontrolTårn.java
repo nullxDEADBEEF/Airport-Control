@@ -17,7 +17,7 @@ import java.util.*;
 
 import static com.nullxdeadbeef.Service.FlyRejseDAO.selectAll;
 
-public class KontrolTårn {
+public class KontrolTårn extends Thread {
     private static final int PORT = 42069;
 //    Listen af alle fly, hentet fra databasen
     private ArrayList<FlyRejse> flyRejseListe;
@@ -34,33 +34,41 @@ public class KontrolTårn {
     private static Socket kontrolTaarnSocket;
 
     public static void main(String[] args) {
-        Socket clientSocket = null;
         KontrolTårn kontrolTårn = new KontrolTårn();
-        try {
-            server = new ServerSocket( PORT );
-        } catch ( IOException ex ) {
-            System.out.println( "ERROR" );
-            ex.printStackTrace();
-            System.exit( 1 );
-        }
+        Thread server = new AirportServer();
+        server.start();
+        kontrolTårn.startSimulering( LocalDateTime.parse( "2019-09-19T00:00:00" ) );
+        Thread kontrolTaarn = new KontrolTårn();
+        kontrolTaarn.start();
+    }
 
-        while (true) {
+    static class AirportServer extends Thread {
+        ServerSocket serverSocket;
+
+        Socket clientSocket = null;
+
+        public void run() {
             try {
-                clientSocket = server.accept();
-                kontrolTaarnSocket = clientSocket;
-                personaleSockets.add( clientSocket );
-                kontrolTårn.startSimulering( LocalDateTime.parse( "2019-09-19T00:00:00" ));
+                serverSocket = new ServerSocket( PORT );
             } catch ( IOException ex ) {
+                System.out.println( "ERROR" );
                 ex.printStackTrace();
                 System.exit( 1 );
+            }
+
+            while (true) {
+                try {
+                    clientSocket = server.accept();
+                    kontrolTaarnSocket = clientSocket;
+                    personaleSockets.add( clientSocket );
+                } catch ( IOException ex ) {
+                    ex.printStackTrace();
+                    System.exit( 1 );
+                }
             }
         }
     }
 
-//    public void lyt(){
-//        Thread lyttetråd = new KontrolTårn();
-//        lyttetråd.start();
-//    }
 
     public void run() {
         while ( true ) {
