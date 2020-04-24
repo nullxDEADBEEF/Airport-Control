@@ -1,32 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d972b536-7430-498d-8fe8-b910bf66b687" name="Default Changelist" comment="comments">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="d972b536-7430-498d-8fe8-b910bf66b687" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/airport-control/META-INF/airport-control.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/airport-control/META-INF/airport-control.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/Fly.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/Fly.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/FlyRejse.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/FlyRejse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/KontrolTårn.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/KontrolTårn.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/KontrolTårnThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/KontrolTårnThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/Lufthavnspersonale.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/Lufthavnspersonale/Lufthavnspersonale.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/Lufthavnspersonale/Lufthavnspersonale.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/Lufthavnspersonale/Pilot.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/Lufthavnspersonale/Pilot.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/Pilot.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/Pilot.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/Service/DatabaseAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/Service/DatabaseAdapter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/Service/FlyDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/Service/FlyDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/Service/FlyRejseDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/Service/FlyRejseDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/Service/StandpladsDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/Service/StandpladsDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/Service/TerminalDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/Service/TerminalDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/Standplads$Type.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/Standplads$Type.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/Standplads.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/Standplads.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/Status.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/Status.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/TaxiRute.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/Terminal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/Terminal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/airport-control/com/nullxdeadbeef/KontrolTårnTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/airport-control/com/nullxdeadbeef/KontrolTårnTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/airport-control/com/nullxdeadbeef/Service/DatabaseAdapterTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/airport-control/com/nullxdeadbeef/Service/DatabaseAdapterTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nullxdeadbeef/KontrolTårn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nullxdeadbeef/KontrolTårn.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +53,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SET_USER_NAME_GLOBALLY" value="false" />
   </component>
   <component name="ProjectId" id="1at1RuGPKmYIYySEyO0gVQr0j43" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -233,6 +210,7 @@
       <workItem from="1587623898180" duration="12455000" />
       <workItem from="1587710710503" duration="1550000" />
       <workItem from="1587712322968" duration="159000" />
+      <workItem from="1587712495698" duration="350000" />
     </task>
     <task id="LOCAL-00001" summary="fly og flyrejse">
       <created>1587548954547</created>
@@ -297,7 +275,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587636596888</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="comments">
+      <created>1587712544636</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1587712544636</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -342,12 +327,12 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1010" y="447" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587633369723" />
-    <state x="706" y="227" key="CommitChangelistDialog2" timestamp="1587712305763">
+    <state x="706" y="227" key="CommitChangelistDialog2" timestamp="1587712543084">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="887" y="294" key="CommitChangelistDialog2/0.0.2560.1400/-1080.-134.1080.1920/2560.-505.2560.1440@0.0.2560.1400" timestamp="1587643129791" />
     <state x="887" y="294" key="CommitChangelistDialog2/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587636595950" />
-    <state x="706" y="227" key="CommitChangelistDialog2/62.0.1858.1080@62.0.1858.1080" timestamp="1587712305763" />
+    <state x="706" y="227" key="CommitChangelistDialog2/62.0.1858.1080@62.0.1858.1080" timestamp="1587712543084" />
     <state x="960" y="453" key="FileChooserDialogImpl" timestamp="1587548729553">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -390,10 +375,10 @@
     </state>
     <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400/-1080.-134.1080.1920/2560.-505.2560.1440@0.0.2560.1400" timestamp="1587643141054" />
     <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587636605395" />
-    <state x="687" y="364" key="com.intellij.ide.util.TipDialog" timestamp="1587712495144">
+    <state x="687" y="364" key="com.intellij.ide.util.TipDialog" timestamp="1587712858723">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state x="687" y="364" key="com.intellij.ide.util.TipDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1587712495144" />
+    <state x="687" y="364" key="com.intellij.ide.util.TipDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1587712858723" />
     <state x="984" y="593" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1587548290516">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -402,11 +387,12 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1051" y="418" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587632918229" />
-    <state x="982" y="491" key="git4idea.merge.GitPullDialog" timestamp="1587643135271">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state x="775" y="379" key="git4idea.merge.GitPullDialog" timestamp="1587712864075">
+      <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="982" y="491" key="git4idea.merge.GitPullDialog/0.0.2560.1400/-1080.-134.1080.1920/2560.-505.2560.1440@0.0.2560.1400" timestamp="1587643135271" />
     <state x="982" y="491" key="git4idea.merge.GitPullDialog/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587640735071" />
+    <state x="775" y="379" key="git4idea.merge.GitPullDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1587712864075" />
     <state width="600" height="424" key="javadoc.popup" timestamp="1587540589642">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
