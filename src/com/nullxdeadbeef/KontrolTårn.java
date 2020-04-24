@@ -2,6 +2,7 @@ package com.nullxdeadbeef;
 
 import com.nullxdeadbeef.Service.FlyDAO;
 
+import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.ServerSocket;
@@ -9,12 +10,10 @@ import java.net.Socket;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
-import java.time.ZoneId;
-import java.time.format.DateTimeFormatter;
 import java.util.*;
 
 public class KontrolTårn {
-    private final int PORT = 42069;
+    private static final int PORT = 42069;
 //    Listen af alle fly, hentet fra databasen
     private ArrayList<Fly> flyListe;
 //    Listen af alle de fly som på den givne dag ankommer, er skal blive klar til boarding
@@ -22,12 +21,14 @@ public class KontrolTårn {
 //    Listen af alle de fly som har skabt forbindelse til kontroltårnet, ved brug af protokollen
     private ArrayList<Fly> forbundedeFly;
     private LocalDateTime tidspunkt;
-    private ServerSocket server;
+    private static ServerSocket server;
     private static Vector<Socket> personaleSockets = new Vector<>();
     private static FlyDAO flyDAO = new FlyDAO();
+    private static Socket kontrolTaarnSocket;
 
-    public void main() {
+    public static void main(String[] args) {
         Socket clientSocket = null;
+        KontrolTårn kontrolTårn = new KontrolTårn();
         try {
             server = new ServerSocket( PORT );
         } catch ( IOException ex ) {
@@ -39,9 +40,9 @@ public class KontrolTårn {
         while (true) {
             try {
                 clientSocket = server.accept();
-                Runnable r = new KontrolTårnThread( clientSocket );
+                kontrolTaarnSocket = clientSocket;
                 personaleSockets.add( clientSocket );
-                r.run();
+                kontrolTårn.startSimulering( LocalDateTime.parse( "2019-09-19T00:00:00" ));
             } catch ( IOException ex ) {
                 ex.printStackTrace();
                 System.exit( 1 );
@@ -54,8 +55,15 @@ public class KontrolTårn {
 //        lyttetråd.start();
 //    }
 
+    public void run() {
+        while ( true ) {
+          //  sendBesked();
+            modtagBesked();
+        }
+    }
+
     public void startSimulering(LocalDateTime tidspunkt){
-        flyListe = flyDAO.getAll();
+        //flyListe = flyDAO.getAll();
 
         this.tidspunkt = tidspunkt;
         while(true){
@@ -89,8 +97,29 @@ public class KontrolTårn {
             }
         }
     }
-    public void modtagBesked() {}
-    public void sendBesked() {}
+    // TODO: husk at logge besked
+    public void modtagBesked() {
+        try {
+            DataInputStream inputStream =
+                    new DataInputStream( kontrolTaarnSocket.getInputStream() );
+            String besked = inputStream.readUTF();
+            System.out.println( besked );
+        } catch ( IOException ex ) {
+            ex.printStackTrace();
+            System.exit( 1 );
+        }
+    }
+
+    public void sendBesked( String besked ) {
+        try {
+            DataOutputStream outputStream =
+                    new DataOutputStream( kontrolTaarnSocket.getOutputStream() );
+            outputStream.writeUTF( besked );
+        } catch ( IOException ex ) {
+            ex.printStackTrace();
+            System.exit( 1 );
+        }
+    }
 
     public void inkrementerTidspunkt(){
         tidspunkt = tidspunkt.plusMinutes(5);
@@ -125,13 +154,18 @@ public class KontrolTårn {
     // en ny pilotThread med flyet som parameter
     public void indenforKlokkeslaet(ArrayList<Fly> flyISimulation, LocalDateTime tidspunkt) {
         LocalTime tidspunktTime = tidspunkt.toLocalTime();
+        // vi laver en size counter for at holde styr paa
+        // hvornaar vi skal stoppe med at lave threads til vores fly
+        int size_counter = 0;
         while (true) {
+            if ( size_counter == flyISimulation.size() ) {
+                break;
+            }
             for (Fly fly : flyISimulation) {
-                if (fly.getFlyRejse().getKlokkeslæt() == tidspunktTime.minusHours(1)) {
-                    Thread pilotThread = new Pilot(fly);
+                if (fly.getFlyRejse().getKlokkeslæt().isBefore( tidspunktTime.plusMinutes( 60 ) ) ) {
+                    Thread pilotThread = new PilotThread(fly);
                     pilotThread.start();
-                } else if (fly.getFlyRejse().getKlokkeslæt() != tidspunktTime.minusHours(1)) {
-                    break;
+                    size_counter++;
                 }
             }
         }

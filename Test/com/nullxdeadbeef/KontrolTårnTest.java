@@ -21,8 +21,8 @@ class KontrolTårnTest {
         KontrolTårn kontrolTårn = new KontrolTårn();
         ArrayList<Fly> aktuelleFly = new ArrayList<>();
         aktuelleFly.add(testFly);
-        LocalDateTime tidspunkt = LocalDateTime.parse("2019-09-19T00:30:00");
-        kontrolTårn.indenforKlokkeslaet(aktuelleFly, tidspunkt.minusHours(1));
+        LocalDateTime tidspunkt = LocalDateTime.parse("2019-09-19T01:00:00");
+        kontrolTårn.indenforKlokkeslaet( aktuelleFly, tidspunkt );
 
     }
 
