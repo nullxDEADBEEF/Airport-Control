@@ -67,7 +67,7 @@ public class KontrolTårn {
         boolean running = true;
         while ( true ) {
             ArrayList<Fly> aktuelleFly = getAktuelleFly( flyListe, tidspunkt );
-            indenforKlokkeslaet(aktuelleFly, tidspunkt);
+            indenforKlokkeslaet(aktuelleFly, tidspunkt );
             inkrementerTidspunkt();
 
             // TODO: remember to remove ;)
@@ -113,9 +113,10 @@ public class KontrolTårn {
     public ArrayList<Fly> getAktuelleFly( ArrayList<Fly> alleFly, LocalDateTime tidspunkt ) {
         ArrayList<Fly> flyISimulation = new ArrayList<>();
         LocalDate tidspunktDate = tidspunkt.toLocalDate();
+        LocalTime tidspunktTime = tidspunkt.toLocalTime();
 
         for (Fly fly : alleFly) {
-            if (fly.getFlyRejse().getDato() == tidspunktDate) {
+            if (fly.getFlyRejse().getDato() == tidspunktDate && fly.getFlyRejse().getKlokkeslæt().isBefore( tidspunktTime ) ) {
                 flyISimulation.add(fly);
             }
         }
@@ -127,10 +128,8 @@ public class KontrolTårn {
         LocalTime tidspunktTime = tidspunkt.toLocalTime();
         while (true) {
             for (Fly fly : flyISimulation) {
-                if (fly.getFlyRejse().getKlokkeslæt() == tidspunktTime.minusHours(1)) {
                     Thread pilotThread = new Pilot(fly);
                     pilotThread.start();
-                }
             }
         }
     }
