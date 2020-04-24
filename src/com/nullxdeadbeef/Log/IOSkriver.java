@@ -10,17 +10,17 @@ import java.time.LocalTime;
 public class IOSkriver {
 
     // To get the current date
-    long millis=System.currentTimeMillis();
-    java.sql.Date date=new java.sql.Date(millis);
+    static long millis=System.currentTimeMillis();
+    static java.sql.Date date=new java.sql.Date(millis);
 
-    int num=1;
+    static int num=1;
 
     // Saetter filnavn til Log-tidspunkt.txt
     // Eks. Log-2020-05-26.txt
-    String filnavn = "Log-"+date+".txt";
+    static String filnavn = "Log-"+date+".txt";
 
     // Hvis et fly skal skrive til fil
-    public boolean skrivTilFil(FlyRejse flyRejse, LocalTime tidspunkt, String besked) {
+    public static boolean logKommunikation(FlyRejse flyRejse, LocalTime tidspunkt, String besked) {
         try {
             File file = new File("Data/"+filnavn);
 
@@ -33,7 +33,6 @@ public class IOSkriver {
 
             // Udeskriver Log-num, og laegger 1 til num
             printWriter.print("Log-"+num+" ");
-            num++;
 
             // Udskriver flyets rutenr.
             printWriter.print("Fly "+flyRejse.getRuteNr()+": ");
@@ -41,6 +40,10 @@ public class IOSkriver {
             // Skriver beskeden som er sendt over fra parameterne
             printWriter.println(besked);
 
+            System.out.println("["+tidspunkt.getHour()+":"+tidspunkt.getMinute()+":"+tidspunkt.getSecond()+"] "+
+                    "Log-"+num+" "+flyRejse.getRuteNr()+": "+besked);
+
+            num++;
             fileWriter.close();
 
             // Retuner at det gik godt
@@ -55,7 +58,7 @@ public class IOSkriver {
     }
 
     // Hvis en personalegruppe skal skrive til en fil
-    public boolean skrivTilFil(Lufthavnspersonale lhp, LocalTime tidspunkt, String besked){
+    public static boolean logKommunikation(Lufthavnspersonale lhp, LocalTime tidspunkt, String besked){
         try {
             File file = new File("Data/"+filnavn);
 
@@ -68,13 +71,16 @@ public class IOSkriver {
 
             // Udeskriver Log-num, og laegger 1 til num
             printWriter.print("Log-"+num+" ");
-            num++;
 
             // Udskriver personalegruppen.
             printWriter.print(lhp.getClass().getSimpleName()+": ");
 
             // Skriver beskeden som er sendt over fra parameterne
             printWriter.println(besked);
+
+            System.out.println("["+tidspunkt.getHour()+":"+tidspunkt.getMinute()+":"+tidspunkt.getSecond()+"] "+
+                    "Log-"+num+" "+lhp.getClass().getSimpleName()+": "+besked);
+            num++;
 
             fileWriter.close();
 
@@ -90,7 +96,7 @@ public class IOSkriver {
     }
 
     // Hvis kontroltaarnet skal skrive til en fil
-    public boolean skrivTilFil(LocalTime tidspunkt, String besked){
+    public static boolean logKommunikation(LocalTime tidspunkt, String besked){
         try {
             File file = new File("Data/"+filnavn);
 
@@ -103,7 +109,6 @@ public class IOSkriver {
 
             // Udeskriver Log-num, og laegger 1 til num
             printWriter.print("Log-"+num+" ");
-            num++;
 
             // Udskriver Kontroltaarn:
             printWriter.print("Kontroltårn: ");
@@ -111,6 +116,9 @@ public class IOSkriver {
             // Skriver beskeden som er sendt over fra parameterne
             printWriter.println(besked);
 
+            System.out.println("["+tidspunkt.getHour()+":"+tidspunkt.getMinute()+":"+tidspunkt.getSecond()+"] "+
+                    "Log-"+num+" "+"Kontroltårn: "+besked);
+            num++;
             fileWriter.close();
 
             // Retuner at det gik godt

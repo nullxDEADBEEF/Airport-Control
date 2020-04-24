@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d972b536-7430-498d-8fe8-b910bf66b687" name="Default Changelist" comment="">
+    <list default="true" id="d972b536-7430-498d-8fe8-b910bf66b687" name="Default Changelist" comment="Made IOSkriver static - renamed methods to">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/com/nullxdeadbeef/FlyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/com/nullxdeadbeef/FlyTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test/com/nullxdeadbeef/IOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/com/nullxdeadbeef/IOTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/com/nullxdeadbeef/KontrolTårnTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/com/nullxdeadbeef/KontrolTårnTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/FlyRejse.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/FlyRejse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/KontrolTårn.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/airport-control/com/nullxdeadbeef/KontrolTårn.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/airport-control/com/nullxdeadbeef/FlyTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/airport-control/com/nullxdeadbeef/FlyTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/airport-control/com/nullxdeadbeef/KontrolTårnTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/airport-control/com/nullxdeadbeef/KontrolTårnTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nullxdeadbeef/FlyRejse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nullxdeadbeef/FlyRejse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nullxdeadbeef/KontrolTårn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nullxdeadbeef/KontrolTårn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nullxdeadbeef/Log/IOSkriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nullxdeadbeef/Log/IOSkriver.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +102,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.KontrolTårn">
+  <component name="RunManager" selected="JUnit.IOTest">
     <configuration name="KontrolTårn" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.nullxdeadbeef.KontrolTårn" />
       <module name="airport-control" />
@@ -147,6 +142,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="IOTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="airport-control" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nullxdeadbeef.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.nullxdeadbeef" />
+      <option name="MAIN_CLASS_NAME" value="com.nullxdeadbeef.IOTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="IOTest.ioTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="airport-control" />
       <extension name="coverage">
@@ -179,29 +189,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KontrolTårnTest.startSimulering" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="airport-control" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.nullxdeadbeef.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.nullxdeadbeef" />
-      <option name="MAIN_CLASS_NAME" value="com.nullxdeadbeef.KontrolTårnTest" />
-      <option name="METHOD_NAME" value="startSimulering" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.IOTest" />
         <item itemvalue="Application.KontrolTårn" />
         <item itemvalue="JUnit.IOTest.ioTest" />
         <item itemvalue="JUnit.FlyTest.taxi" />
         <item itemvalue="JUnit.KontrolTårnTest.inkrementerTidspunkt" />
-        <item itemvalue="JUnit.KontrolTårnTest.startSimulering" />
       </list>
     </recent_temporary>
   </component>
@@ -372,10 +366,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1010" y="447" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587633369723" />
-    <state x="706" y="19" key="CommitChangelistDialog2" timestamp="1587718810980">
-      <screen x="62" y="0" width="1858" height="1080" />
+    <state x="665" y="218" key="CommitChangelistDialog2" timestamp="1587721251684">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="665" y="218" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587645715565" />
+    <state x="665" y="218" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587721251684" />
     <state x="887" y="289" key="CommitChangelistDialog2/0.0.2560.1400/-1080.-134.1080.1920/2560.-505.2560.1440@0.0.2560.1400" timestamp="1587646661784" />
     <state x="887" y="289" key="CommitChangelistDialog2/0.0.2560.1400/2560.-505.2560.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587717345697" />
     <state x="887" y="294" key="CommitChangelistDialog2/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587636595950" />
@@ -454,10 +448,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1051" y="418" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587632918229" />
-    <state x="775" y="379" key="git4idea.merge.GitPullDialog" timestamp="1587718818906">
-      <screen x="62" y="0" width="1858" height="1080" />
+    <state x="737" y="365" key="git4idea.merge.GitPullDialog" timestamp="1587720077274">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="737" y="365" key="git4idea.merge.GitPullDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587643956779" />
+    <state x="737" y="365" key="git4idea.merge.GitPullDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587720077274" />
     <state x="982" y="491" key="git4idea.merge.GitPullDialog/0.0.2560.1400/-1080.-134.1080.1920/2560.-505.2560.1440@0.0.2560.1400" timestamp="1587646665987" />
     <state x="982" y="491" key="git4idea.merge.GitPullDialog/0.0.2560.1400/2560.-505.2560.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587716544102" />
     <state x="982" y="491" key="git4idea.merge.GitPullDialog/0.0.2560.1400/2560.-505.2731.1440/-1080.-134.1080.1920@0.0.2560.1400" timestamp="1587640735071" />

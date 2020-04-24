@@ -21,15 +21,14 @@ class IOTest {
         KontrolTårn kontrolTårn = new KontrolTårn();
         com.nullxdeadbeef.Lufthavnspersonale.Pilot testPilot = new Pilot(testFlyRejse);
 
-        IOSkriver ioSkriver = new IOSkriver();
 
-        assertTrue(ioSkriver.skrivTilFil(testPilot, testFlyRejse.getKlokkeslæt(), "Dette er en besked til Hanne"));
-        assertTrue(ioSkriver.skrivTilFil(testPilot, testFlyRejse.getKlokkeslæt(), "Dette er en besked til Hanne"));
-        assertTrue(ioSkriver.skrivTilFil(testPilot, testFlyRejse.getKlokkeslæt(), "Dette er en besked til Hanne"));
-        assertTrue(ioSkriver.skrivTilFil(testPilot, testFlyRejse.getKlokkeslæt(), "Dette er en besked til Hanne"));
-        assertTrue(ioSkriver.skrivTilFil(testPilot, testFlyRejse.getKlokkeslæt(), "Dette er en besked til Hanne"));
-        assertTrue(ioSkriver.skrivTilFil(testPilot, testFlyRejse.getKlokkeslæt(), "Dette er en besked til Hanne"));
-        assertTrue(ioSkriver.skrivTilFil(testPilot, testFlyRejse.getKlokkeslæt(), "Dette er en besked til Hanne"));
+        assertTrue(IOSkriver.logKommunikation(testPilot, testFlyRejse.getKlokkeslæt(), "Dette er en besked til Hanne"));
+        assertTrue(IOSkriver.logKommunikation(testPilot, testFlyRejse.getKlokkeslæt(), "Dette er en besked til Hanne"));
+        assertTrue(IOSkriver.logKommunikation(testPilot, testFlyRejse.getKlokkeslæt(), "Dette er en besked til Hanne"));
+        assertTrue(IOSkriver.logKommunikation(testPilot, testFlyRejse.getKlokkeslæt(), "Dette er en besked til Hanne"));
+        assertTrue(IOSkriver.logKommunikation(testPilot, testFlyRejse.getKlokkeslæt(), "Dette er en besked til Hanne"));
+        assertTrue(IOSkriver.logKommunikation(testPilot, testFlyRejse.getKlokkeslæt(), "Dette er en besked til Hanne"));
+        assertTrue(IOSkriver.logKommunikation(testPilot, testFlyRejse.getKlokkeslæt(), "Dette er en besked til Hanne"));
 
     }
 }

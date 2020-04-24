@@ -2,16 +2,20 @@ package com.nullxdeadbeef;
 
 import com.nullxdeadbeef.Log.IOSkriver;
 import com.nullxdeadbeef.Service.FlyDAO;
+import com.nullxdeadbeef.Service.FlyRejseDAO;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
+import java.lang.reflect.Array;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.util.*;
+
+import static com.nullxdeadbeef.Service.FlyRejseDAO.selectAll;
 
 public class KontrolTårn {
     private static final int PORT = 42069;
@@ -96,8 +100,16 @@ public class KontrolTårn {
         return tidspunkt;
     }
 
+/*
     public void printOgLogKommunikation(String besked){
+
         IOSkriver ioSkriver = new IOSkriver();
+        ArrayList<FlyRejse> testArrayMedData = FlyRejseDAO.selectAll();
+
+        for (FlyRejse flyRejse : testArrayMedData){
+            ioSkriver.skrivTilFil(flyRejse, flyRejse.getKlokkeslæt(), besked);
+        }
+
 
         // Gemmer beskeden i loggen
         ioSkriver.skrivTilFil(tidspunkt.toLocalTime(), besked);
@@ -111,6 +123,7 @@ public class KontrolTårn {
 
         num++;
     }
+*/
 
     public void printLog() {}
 
