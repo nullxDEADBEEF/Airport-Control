@@ -60,8 +60,13 @@ public class KontrolTårn {
 
     public void run() {
         while ( true ) {
-            //sendBesked();
-            modtagBesked();
+            String flyBesked = modtagBesked();
+            if ( flyBesked.contains( "FORBIND_FLY" ) ) {
+                String[] fly = flyBesked.split( ", " );
+                String ac = fly[0];
+                String ruteNr = fly[1];
+                sendBesked( "FORBIND " + ac + " " + ruteNr );
+            }
         }
     }
 
@@ -120,16 +125,18 @@ public class KontrolTårn {
         }
     }
     // TODO: husk at logge besked
-    public void modtagBesked() {
+    public String modtagBesked() {
         try {
             DataInputStream inputStream =
                     new DataInputStream( kontrolTaarnSocket.getInputStream() );
             String besked = inputStream.readUTF();
-            System.out.println( besked );
+            return besked;
         } catch ( IOException ex ) {
             ex.printStackTrace();
             System.exit( 1 );
         }
+
+        return "FEJL i modtagBesked() kontroltaarnet";
     }
 
     public void sendBesked( String besked ) {
