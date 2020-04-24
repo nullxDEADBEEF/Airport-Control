@@ -54,30 +54,30 @@ public class KontrolTårn {
 //        lyttetråd.start();
 //    }
 
-    public void startSimulering(LocalDateTime tidspunkt){
-        flyListe = flyDAO.getAll();
-
-        this.tidspunkt = tidspunkt;
-        while(true){
-            simulering();
-        }
-    }
-    public LocalDateTime simulering() {
-//        Simuleringskode her
-        boolean running = true;
-        while ( true ) {
-            ArrayList<Fly> aktuelleFly = getAktuelleFly( flyListe, tidspunkt );
-            indenforKlokkeslaet(aktuelleFly, tidspunkt);
-            inkrementerTidspunkt();
-
-            // TODO: remember to remove ;)
-           if (!running) {
-               break;
-           }
-        }
-
-        return tidspunkt;
-    }
+//    public void startSimulering(LocalDateTime tidspunkt){
+//        flyListe = flyDAO.getAll();
+//
+//        this.tidspunkt = tidspunkt;
+//        while(true){
+//            simulering();
+//        }
+//    }
+//    public LocalDateTime simulering() {
+////        Simuleringskode her
+//        boolean running = true;
+//        while ( true ) {
+//            ArrayList<Fly> aktuelleFly = getAktuelleFly( flyListe, tidspunkt );
+//            indenforKlokkeslaet(aktuelleFly, tidspunkt);
+//            inkrementerTidspunkt();
+//
+//            // TODO: remember to remove ;)
+//           if (!running) {
+//               break;
+//           }
+//        }
+//
+//        return tidspunkt;
+//    }
     public void printLog() {}
     public void sendTilAlle( String message ) {
         for ( Socket s : personaleSockets ) {
@@ -110,32 +110,32 @@ public class KontrolTårn {
     }
 
     // Find fly med afgang eller ankomst indenfor tidspunkt
-    public ArrayList<Fly> getAktuelleFly( ArrayList<Fly> alleFly, LocalDateTime tidspunkt ) {
-        ArrayList<Fly> flyISimulation = new ArrayList<>();
-        LocalDate tidspunktDate = tidspunkt.toLocalDate();
-
-        for (Fly fly : alleFly) {
-            if (fly.getFlyRejse().getDato() == tidspunktDate) {
-                flyISimulation.add(fly);
-            }
-        }
-        return flyISimulation;
-    }
+//    public ArrayList<Fly> getAktuelleFly( ArrayList<Fly> alleFly, LocalDateTime tidspunkt ) {
+//        ArrayList<Fly> flyISimulation = new ArrayList<>();
+//        LocalDate tidspunktDate = tidspunkt.toLocalDate();
+//
+//        for (Fly fly : alleFly) {
+//            if (fly.getFlyRejse().getDato() == tidspunktDate) {
+//                flyISimulation.add(fly);
+//            }
+//        }
+//        return flyISimulation;
+//    }
     //tjekker om et fly fra aktuelleFly er indenfor en time af simuleringstidspunkt, og starter så
     // en ny pilotThread med flyet som parameter
-    public void indenforKlokkeslaet(ArrayList<Fly> flyISimulation, LocalDateTime tidspunkt) {
-        LocalTime tidspunktTime = tidspunkt.toLocalTime();
-        while (true) {
-            for (Fly fly : flyISimulation) {
-                if (fly.getFlyRejse().getKlokkeslæt() == tidspunktTime.minusHours(1)) {
-                    Thread pilotThread = new Pilot(fly);
-                    pilotThread.start();
-                } else if (fly.getFlyRejse().getKlokkeslæt() != tidspunktTime.minusHours(1)) {
-                    break;
-                }
-            }
-        }
-    }
+//    public void indenforKlokkeslaet(ArrayList<Fly> flyISimulation, LocalDateTime tidspunkt) {
+//        LocalTime tidspunktTime = tidspunkt.toLocalTime();
+//        while (true) {
+//            for (Fly fly : flyISimulation) {
+//                if (fly.getFlyRejse().getKlokkeslæt() == tidspunktTime.minusHours(1)) {
+//                    Thread pilotThread = new Pilot(fly);
+//                    pilotThread.start();
+//                } else if (fly.getFlyRejse().getKlokkeslæt() != tidspunktTime.minusHours(1)) {
+//                    break;
+//                }
+//            }
+//        }
+//    }
 
     public void setAktuelleFly(ArrayList<Fly> aktuelleFly) {
         this.aktuelleFly = aktuelleFly;

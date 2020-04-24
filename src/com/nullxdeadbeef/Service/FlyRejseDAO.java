@@ -54,7 +54,7 @@ public class FlyRejseDAO {
     }*/
 
 
-    public ArrayList<FlyRejse> selectAll() {
+    public static ArrayList<FlyRejse> selectAll() {
         ArrayList<FlyRejse> flyRejser = new ArrayList<>();
         String sql = "SELECT * FROM fly_rejse";
 

@@ -13,12 +13,12 @@ public class Pilot extends Thread {
         this.fly = fly;
     }
 
-    @Override
-    public void run() {
-        sendBesked( "FORBIND_FLY " + fly.getaC() + ", " + fly.getFlyRejse().getRuteNr() );
-        modtagBesked();
-
-    }
+//    @Override
+//    public void run() {
+//        sendBesked( "FORBIND_FLY " + fly.getaC() + ", " + fly.getFlyRejse().getRuteNr() );
+//        modtagBesked();
+//
+//    }
 
     public void sendBesked( String besked ) {
         try {

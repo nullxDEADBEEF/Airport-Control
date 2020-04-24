@@ -35,7 +35,7 @@ public class IOSkriver {
             num++;
 
             // Udskriver flyets rutenr.
-            printWriter.print("Fly "+fly.getFlyRejse().getRuteNr()+": ");
+//            printWriter.print("Fly "+fly.getFlyRejse().getRuteNr()+": ");
 
             // Skriver beskeden som er sendt over fra parameterne
             printWriter.println(besked);
