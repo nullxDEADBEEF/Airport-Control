@@ -5,10 +5,12 @@ import org.junit.jupiter.api.Test;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
+import java.util.ArrayList;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class KontrolTårnTest {
+
 
     @Test
     void startSimulering() {
@@ -17,8 +19,16 @@ class KontrolTårnTest {
         Standplads testStandplads = new Standplads(16, Standplads.Type.SMALL, false, 1000);
         Fly testFly = new Fly("73H", testStandplads, testFlyRejse, true, true);
         KontrolTårn kontrolTårn = new KontrolTårn();
-        LocalDateTime now = LocalDateTime.now();
-        kontrolTårn.startSimulering(now);
+        ArrayList<Fly> aktuelleFly = new ArrayList<>();
+        aktuelleFly.add(testFly);
+        LocalDateTime tidspunkt = LocalDateTime.parse("2019-09-19T00:30:00");
+        kontrolTårn.indenforKlokkeslaet(aktuelleFly, tidspunkt.minusHours(1));
+
+    }
+
+    @Test
+    void indenforKlokkeslaet() {
+        //tester om der skabes en ny tråd hvis flyet er indenfor tidspunkt
     }
 
     @Test
